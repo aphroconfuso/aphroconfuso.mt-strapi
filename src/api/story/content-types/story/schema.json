@@ -13,7 +13,50 @@
   "pluginOptions": {},
   "attributes": {
     "body": {
-      "type": "text",
+      "type": "richtext",
+      "required": true
+    },
+    "introduction": {
+      "type": "richtext",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 300,
+      "minLength": 270
+    },
+    "issueMonth": {
+      "type": "enumeration",
+      "enum": [
+        "Jannar",
+        "Frar",
+        "Marzu",
+        "April",
+        "Mejju",
+        "Ġunju",
+        "Lulju",
+        "Awwissu",
+        "Settembru",
+        "Ottubru",
+        "Novembru",
+        "Diċembru"
+      ],
+      "required": true
+    },
+    "issueYear": {
+      "type": "enumeration",
+      "enum": [
+        "s. 2023",
+        "s. 2024",
+        "s. 2025",
+        "s. 2026",
+        "s. 2027"
+      ],
       "required": true
     }
   }
