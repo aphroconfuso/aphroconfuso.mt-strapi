@@ -1,5 +1,5 @@
 {
-  "name": "aphroconfuso-mt-strapi-dev-temp",
+  "name": "aphroconfuso.mt-strapi-dev",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -10,15 +10,14 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@sklinet/strapi-plugin-tinymce": "^1.0.4",
     "@strapi/plugin-graphql": "^4.8.2",
     "@strapi/plugin-i18n": "4.8.2",
     "@strapi/plugin-users-permissions": "4.8.2",
     "@strapi/strapi": "4.8.2",
     "better-sqlite3": "8.0.1"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
+  "contributors": ["Joe Gatt", "Loranne Vella"],
   "strapi": {
     "uuid": "6c792829-21cc-45e9-bf13-07e8265cc3de"
   },
