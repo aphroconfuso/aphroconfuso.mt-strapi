@@ -58,6 +58,13 @@
         "s. 2027"
       ],
       "required": true
+    },
+    "pageUrl": {
+      "type": "string",
+      "unique": true,
+      "maxLength": 120,
+      "minLength": 3,
+      "regex": "/[a-zċġħż]+/"
     }
   }
 }
