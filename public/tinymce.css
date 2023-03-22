@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Alegreya Sans";
-  src: url('https://aphroconfuso.mt/fonts/alegreya-sans-regular.ttf') format('truetype');
+  font-family: "Alegreya";
+  src: url('/Alegreya-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-weight: 400;
@@ -18,7 +18,7 @@ p, div, small, h3, h4, h5, h6 {
 body {
 	background-color: #f9f9f3;
 	color: #4b4744;
-	font-family: 'Alegreya sans', serif;
+	font-family: 'Alegreya', serif;
 	font-size: 1.2rem;
 	line-height: 1.4;
  /* #f9f9f6; */
@@ -26,7 +26,7 @@ body {
 
 p {
 	/* color: #4b4744; */
-	font-family: 'Alegreya Sans', sans-serif !important;
+	font-family: 'Alegreya', sans-serif !important;
 	font-size: 1.2rem;
 	line-height: 1.4;
 	margin-bottom: 0.9rem;
