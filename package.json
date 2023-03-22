@@ -10,14 +10,16 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@sklinet/strapi-plugin-tinymce": "^1.0.4",
+		"@sklinet/strapi-plugin-tinymce": "^1.0.4",
+		"codemirror": "5.65.11",
+    "@notum-cz/strapi-plugin-content-versioning": "^0.4.7",
     "@strapi/plugin-graphql": "^4.8.2",
     "@strapi/plugin-i18n": "4.8.2",
     "@strapi/plugin-users-permissions": "4.8.2",
     "@strapi/strapi": "4.8.2",
     "better-sqlite3": "8.0.1",
-		"codemirror": "5.65.11",
-    "pg": "^8.10.0"
+    "pg": "^8.10.0",
+    "strapi-plugin-duplicate-button": "^1.1.7"
 	},
   "contributors": ["Joe Gatt", "Loranne Vella"],
   "strapi": {
