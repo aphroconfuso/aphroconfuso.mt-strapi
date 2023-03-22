@@ -1,6 +1,6 @@
 module.exports = ({env}) => ({
 	tinymce: {
-			enabled: false,
+			enabled: true,
 			config: {
 					editor: {
 							outputFormat: "html",
