@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_definitions_style_guide_items",
+  "info": {
+    "displayName": "styleGuideItem"
+  },
+  "options": {},
+  "attributes": {
+    "term": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "definition": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "international_medias",
+  "info": {
+    "singularName": "international-media",
+    "pluralName": "international-medias",
+    "displayName": "InternationalMedia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "العربية",
+        "Català",
+        "Deutsch",
+        "English",
+        "Español",
+        "Euskara",
+        "Français",
+        "Hrvatski",
+        "Italiano",
+        "Malti"
+      ],
+      "required": true
+    },
+    "urlPath": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

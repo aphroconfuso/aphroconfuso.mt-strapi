@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books",
+  "info": {
+    "singularName": "book",
+    "pluralName": "books",
+    "displayName": "Book",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "العربية",
+        "Català",
+        "Deutsch",
+        "English",
+        "Español",
+        "Euskara",
+        "Français",
+        "Hrvatski",
+        "Italiano",
+        "Malti"
+      ],
+      "default": "Malti"
+    },
+    "originalLanguage": {
+      "type": "enumeration",
+      "enum": [
+        "العربية",
+        "Català",
+        "Deutsch",
+        "English",
+        "Español",
+        "Euskara",
+        "Français",
+        "Hrvatski",
+        "Italiano",
+        "Malti"
+      ],
+      "default": "Malti"
+    },
+    "publicationDate": {
+      "type": "date",
+      "required": true
+    },
+    "publishers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::publisher.publisher",
+      "inversedBy": "books"
+    },
+    "stories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::story.story",
+      "mappedBy": "booksReviewd"
+    }
+  }
+}

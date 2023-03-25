@@ -1,0 +1,89 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "singularName": "person",
+    "pluralName": "people",
+    "displayName": "Person"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "forename": {
+      "type": "string",
+      "required": true
+    },
+    "surname": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "contributor": {
+      "type": "boolean",
+      "default": true
+    },
+    "bioNote": {
+      "type": "richtext"
+    },
+    "city": {
+      "type": "string"
+    },
+    "affiliation": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "storiesAuthored": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::story.story",
+      "mappedBy": "authors"
+    },
+    "storiesTranslated": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::story.story",
+      "mappedBy": "translators"
+    },
+    "storiesIllustrated": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::story.story",
+      "mappedBy": "illustrators"
+    },
+    "storiesPhotographed": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::story.story",
+      "mappedBy": "photographers"
+    },
+    "storiesRead": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::story.story",
+      "mappedBy": "readers"
+    },
+    "lettersAuthored": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::letter.letter",
+      "mappedBy": "authors"
+    },
+    "events": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::event.event",
+      "mappedBy": "people"
+    },
+    "sequences": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sequence.sequence",
+      "mappedBy": "authors"
+    }
+  }
+}

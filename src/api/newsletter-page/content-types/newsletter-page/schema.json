@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "newsletter_pages",
+  "info": {
+    "singularName": "newsletter-page",
+    "pluralName": "newsletter-pages",
+    "displayName": "NewsletterPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "string",
+      "required": true
+    },
+    "urlPath": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

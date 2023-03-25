@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "colophons",
+  "info": {
+    "singularName": "colophon",
+    "pluralName": "colophons",
+    "displayName": "colophon",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text",
+      "required": false
+    },
+    "urlPath": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

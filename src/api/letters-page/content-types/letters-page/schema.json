@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "letters_pages",
+  "info": {
+    "singularName": "letters-page",
+    "pluralName": "letters-pages",
+    "displayName": "LettersPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "text"
+    },
+    "urlPath": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

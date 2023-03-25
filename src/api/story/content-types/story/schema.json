@@ -25,10 +25,10 @@
       "required": true
     },
     "description": {
-      "type": "string",
+      "type": "text",
       "required": true,
-      "maxLength": 300,
-      "minLength": 270
+      "maxLength": 600,
+      "minLength": 400
     },
     "issueMonth": {
       "type": "enumeration",
@@ -65,6 +65,120 @@
       "maxLength": 120,
       "minLength": 3,
       "regex": "/[a-zċġħż]+/"
+    },
+    "podcastUrl": {
+      "type": "string",
+      "minLength": 11,
+      "maxLength": 256,
+      "regex": "https.*",
+      "unique": true
+    },
+    "podcastNote": {
+      "type": "richtext",
+      "minLength": 30,
+      "maxLength": 2500
+    },
+    "letters": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::letter.letter",
+      "mappedBy": "stories"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "inversedBy": "storiesAuthored"
+    },
+    "translators": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "inversedBy": "storiesTranslated"
+    },
+    "illustrators": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "inversedBy": "storiesIllustrated"
+    },
+    "photographers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "inversedBy": "storiesPhotographed"
+    },
+    "readers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "inversedBy": "storiesRead"
+    },
+    "endnote": {
+      "type": "text"
+    },
+    "endPromos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "promotions.story-promo",
+      "max": 3,
+      "required": false,
+      "min": 3
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "العربية",
+        "Català",
+        "Deutsch",
+        "English",
+        "Español",
+        "Euskara",
+        "Français",
+        "Hrvatski",
+        "Italiano",
+        "Malti"
+      ],
+      "default": "Malti"
+    },
+    "originalLanguage": {
+      "type": "enumeration",
+      "enum": [
+        "العربية",
+        "Català",
+        "Deutsch",
+        "English",
+        "Español",
+        "Euskara",
+        "Français",
+        "Hrvatski",
+        "Italiano",
+        "Malti"
+      ],
+      "default": "Malti"
+    },
+    "booksReviewd": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::book.book",
+      "inversedBy": "stories"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Esej",
+        "Memoir",
+        "Poeżija",
+        "Reċensjoni",
+        "Storja"
+      ],
+      "required": true
+    },
+    "collections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::collection.collection",
+      "mappedBy": "stories"
     }
   }
 }

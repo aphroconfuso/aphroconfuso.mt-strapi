@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "terms_statements",
+  "info": {
+    "singularName": "terms-statement",
+    "pluralName": "terms-statements",
+    "displayName": "TermsStatement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

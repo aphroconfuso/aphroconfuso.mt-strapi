@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "podcast_pages",
+  "info": {
+    "singularName": "podcast-page",
+    "pluralName": "podcast-pages",
+    "displayName": "PodcastPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "text",
+      "required": true
+    },
+    "urlPath": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

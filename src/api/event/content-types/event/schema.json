@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "dateOpened": {
+      "type": "date"
+    },
+    "dateClosed": {
+      "type": "date"
+    },
+    "venues": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::venue.venue",
+      "inversedBy": "events"
+    },
+    "organisations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::organisation.organisation",
+      "inversedBy": "events"
+    },
+    "people": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "inversedBy": "events"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sequences",
+  "info": {
+    "singularName": "sequence",
+    "pluralName": "sequences",
+    "displayName": "Sequence"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "richtext"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "inversedBy": "sequences"
+    }
+  }
+}

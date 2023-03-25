@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "style_guides",
+  "info": {
+    "singularName": "style-guide",
+    "pluralName": "style-guides",
+    "displayName": "StyleGuide",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "text",
+      "required": true
+    },
+    "urlPath": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
