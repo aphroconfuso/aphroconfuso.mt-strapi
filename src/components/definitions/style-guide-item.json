@@ -1,7 +1,8 @@
 {
   "collectionName": "components_definitions_style_guide_items",
   "info": {
-    "displayName": "styleGuideItem"
+    "displayName": "StyleGuideItem",
+    "description": ""
   },
   "options": {},
   "attributes": {

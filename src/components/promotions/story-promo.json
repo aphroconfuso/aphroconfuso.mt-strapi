@@ -1,7 +1,7 @@
 {
   "collectionName": "components_promotions_story_promos",
   "info": {
-    "displayName": "storyPromo",
+    "displayName": "StoryPromo",
     "description": ""
   },
   "options": {},
@@ -24,11 +24,12 @@
       "target": "api::letter.letter"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

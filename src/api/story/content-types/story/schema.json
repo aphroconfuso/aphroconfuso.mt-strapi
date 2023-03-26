@@ -26,9 +26,8 @@
     },
     "description": {
       "type": "text",
-      "required": true,
-      "maxLength": 600,
-      "minLength": 400
+      "required": false,
+      "minLength": 350
     },
     "issueMonth": {
       "type": "enumeration",
@@ -70,7 +69,6 @@
       "type": "string",
       "minLength": 11,
       "maxLength": 256,
-      "regex": "https.*",
       "unique": true
     },
     "podcastNote": {
@@ -157,7 +155,7 @@
       ],
       "default": "Malti"
     },
-    "booksReviewd": {
+    "booksReviewed": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::book.book",

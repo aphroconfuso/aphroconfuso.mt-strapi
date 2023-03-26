@@ -1,4 +1,24 @@
 module.exports = ({env}) => ({
+	'content-versioning': {
+		enabled: true,
+	},
+	'duplicate-button': {
+		enabled: true,
+	},
+  email: {
+    config: {
+      provider: 'mailgun',
+      providerOptions: {
+        key: env('MAIL_PASSWORD'),
+        domain: env('MAIL_HOST'),
+        url: env('MAILGUN_URL', 'https://api.eu.mailgun.net'),
+      },
+      settings: {
+        defaultFrom: 'cms@aphroconfuso.mt',
+        defaultReplyTo: 'cms@aphroconfuso.mt',
+      },
+    },
+	},
 	graphql: {
 		enabled: true,
     config: {
@@ -10,6 +30,31 @@ module.exports = ({env}) => ({
       apolloServer: {
         tracing: false,
       },
+    },
+	},
+  'preview-button': {
+		enabled: true,
+    config: {
+      contentTypes: [
+        {
+          uid: 'api::home.home',
+          draft: {
+            url: 'https://provi.aphroconfuso.mt',
+          },
+          published: {
+            url: 'https://provi.aphroconfuso.mt',
+          },
+        },
+        {
+          uid: 'api::story.story',
+          draft: {
+            url: 'https://provi.aphroconfuso.mt/{title}',
+          },
+          published: {
+            url: 'https://provi.aphroconfuso.mt/{title}',
+          },
+        },
+      ],
     },
   },
 	tinymce: {

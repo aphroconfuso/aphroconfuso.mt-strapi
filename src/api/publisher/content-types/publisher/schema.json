@@ -4,7 +4,8 @@
   "info": {
     "singularName": "publisher",
     "pluralName": "publishers",
-    "displayName": "publisher"
+    "displayName": "Publisher",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

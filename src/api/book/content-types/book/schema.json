@@ -65,7 +65,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::story.story",
-      "mappedBy": "booksReviewd"
+      "mappedBy": "booksReviewed"
     }
   }
 }
