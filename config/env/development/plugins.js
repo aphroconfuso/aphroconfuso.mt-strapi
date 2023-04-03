@@ -5,20 +5,6 @@ module.exports = ({env}) => ({
 	'duplicate-button': {
 		enabled: true,
 	},
-  // email: {
-  //   config: {
-  //     provider: 'mailgun',
-  //     providerOptions: {
-  //       key: env('MAIL_KEY'),
-  //       domain: env('MAIL_HOST'),
-  //       url: env('MAIL_URL', 'https://api.eu.mailgun.net'),
-  //     },
-  //     settings: {
-  //       defaultFrom: 'cms@aphroconfuso.mt',
-  //       defaultReplyTo: 'cms@aphroconfuso.mt',
-  //     },
-  //   },
-	// },
 	graphql: {
 		enabled: true,
     config: {
