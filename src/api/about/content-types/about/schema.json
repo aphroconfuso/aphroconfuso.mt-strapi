@@ -15,7 +15,7 @@
       "type": "string",
       "required": true
     },
-    "text": {
+    "body": {
       "type": "text",
       "required": true
     },

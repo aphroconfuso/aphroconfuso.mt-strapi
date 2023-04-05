@@ -95,6 +95,9 @@
         "huma"
       ],
       "required": true
+    },
+    "initials": {
+      "type": "string"
     }
   }
 }

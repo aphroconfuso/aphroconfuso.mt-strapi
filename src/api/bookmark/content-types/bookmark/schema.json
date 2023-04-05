@@ -16,7 +16,7 @@
       "required": true
     },
     "intro": {
-      "type": "text",
+      "type": "richtext",
       "required": true
     },
     "urlPath": {

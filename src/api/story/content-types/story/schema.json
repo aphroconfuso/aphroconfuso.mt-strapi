@@ -62,8 +62,7 @@
       "type": "string",
       "unique": true,
       "maxLength": 120,
-      "minLength": 3,
-      "regex": "/[a-zċġħż]+/"
+      "minLength": 3
     },
     "podcastUrl": {
       "type": "string",
@@ -177,6 +176,9 @@
       "relation": "manyToMany",
       "target": "api::collection.collection",
       "mappedBy": "stories"
+    },
+    "endNote": {
+      "type": "text"
     }
   }
 }

@@ -15,8 +15,8 @@
     "title": {
       "type": "string"
     },
-    "text": {
-      "type": "text",
+    "body": {
+      "type": "richtext",
       "required": false
     },
     "urlPath": {

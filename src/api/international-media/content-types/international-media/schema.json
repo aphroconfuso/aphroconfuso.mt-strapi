@@ -15,8 +15,8 @@
       "type": "string",
       "required": true
     },
-    "text": {
-      "type": "text",
+    "body": {
+      "type": "richtext",
       "required": true
     },
     "language": {
