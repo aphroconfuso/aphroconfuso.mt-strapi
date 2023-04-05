@@ -61,11 +61,29 @@
       "target": "api::publisher.publisher",
       "inversedBy": "books"
     },
-    "stories": {
+    "translators": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "inversedBy": "booksTranslated"
+    },
+    "editors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "inversedBy": "booksEdited"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "mappedBy": "booksAuthored"
+    },
+    "mentions": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::story.story",
-      "mappedBy": "booksReviewed"
+      "mappedBy": "booksMentioned"
     }
   }
 }

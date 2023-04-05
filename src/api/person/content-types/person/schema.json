@@ -98,6 +98,24 @@
     },
     "initials": {
       "type": "string"
+    },
+    "booksTranslated": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::book.book",
+      "mappedBy": "translators"
+    },
+    "booksAuthored": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::book.book",
+      "inversedBy": "authors"
+    },
+    "booksEdited": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::book.book",
+      "mappedBy": "editors"
     }
   }
 }

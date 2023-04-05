@@ -154,11 +154,11 @@
       ],
       "default": "Malti"
     },
-    "booksReviewed": {
+    "booksMentioned": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::book.book",
-      "inversedBy": "stories"
+      "inversedBy": "mentions"
     },
     "type": {
       "type": "enumeration",
@@ -179,6 +179,14 @@
     },
     "endNote": {
       "type": "text"
+    },
+    "appointment": {
+      "type": "boolean",
+      "default": false
+    },
+    "prominentMentions": {
+      "type": "integer",
+      "default": 3
     }
   }
 }
