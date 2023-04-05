@@ -112,7 +112,7 @@
       "inversedBy": "storiesRead"
     },
     "endnote": {
-      "type": "text"
+      "type": "richtext"
     },
     "endPromos": {
       "type": "component",
@@ -176,9 +176,6 @@
       "relation": "manyToMany",
       "target": "api::collection.collection",
       "mappedBy": "stories"
-    },
-    "endNote": {
-      "type": "text"
     },
     "appointment": {
       "type": "boolean",
