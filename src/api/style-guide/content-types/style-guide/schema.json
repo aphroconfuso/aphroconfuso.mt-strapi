@@ -23,6 +23,11 @@
     "urlPath": {
       "type": "string",
       "required": true
+    },
+    "entry": {
+      "type": "component",
+      "repeatable": true,
+      "component": "definitions.style-guide-item"
     }
   }
 }

@@ -167,7 +167,8 @@
         "Memoir",
         "Poeżija",
         "Reċensjoni",
-        "Storja"
+        "Storja",
+        "Xiħaġa oħra"
       ],
       "required": true
     },
@@ -184,6 +185,17 @@
     "prominentMentions": {
       "type": "integer",
       "default": 3
+    },
+    "coda": {
+      "type": "richtext"
+    },
+    "postscript": {
+      "type": "richtext"
+    },
+    "epigraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "quotes.epigraphs"
     }
   }
 }

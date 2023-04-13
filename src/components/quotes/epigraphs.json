@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_quotes_epigraphs",
+  "info": {
+    "displayName": "Epigraphs"
+  },
+  "options": {},
+  "attributes": {
+    "quotation": {
+      "type": "richtext",
+      "required": true
+    },
+    "attribution": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

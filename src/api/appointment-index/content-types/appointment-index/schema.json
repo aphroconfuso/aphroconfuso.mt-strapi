@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "appointment_indices",
+  "info": {
+    "singularName": "appointment-index",
+    "pluralName": "appointment-indices",
+    "displayName": "AppointmentIndex",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "intro": {
+      "type": "richtext",
+      "required": true
+    },
+    "urlPath": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
