@@ -79,8 +79,9 @@ module.exports = ({env}) => ({
 													items: [
 															{ title: "Paragraph", block: "p" },
 															{
-																	title: "Paragraph with small letters",
-																	block: "small",
+																title: "Paragraph - enjambed",
+																block: "p",
+																classes: "enjambed"
 															},
 													],
 											},

@@ -31,3 +31,12 @@ p {
 	line-height: 1.4;
 	margin-bottom: 0.9rem;
 }
+
+p.enjambed {
+	margin-bottom: 0;
+}
+
+u {
+	text-decoration: none;
+	white-space: nowrap;
+}

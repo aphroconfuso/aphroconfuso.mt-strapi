@@ -63,7 +63,7 @@ module.exports = ({env}) => ({
 									toolbar:
 											"undo redo | styles | bold italic | \
 											alignleft aligncenter alignright | \
-											image table visualblocks code|\
+											image media table visualblocks code|\
 											nonbreaking bullist numlist | removeformat",
 									style_formats: [
 											{
@@ -74,14 +74,14 @@ module.exports = ({env}) => ({
 															{ title: "h6", block: "h6" },
 													],
 											},
-
 											{
 													title: "Text",
 													items: [
 															{ title: "Paragraph", block: "p" },
 															{
-																	title: "Paragraph with small letters",
-																	block: "small",
+																title: "Paragraph - enjambed",
+																block: "p",
+																classes: "enjambed"
 															},
 													],
 											},
