@@ -59,11 +59,11 @@ module.exports = ({env}) => ({
 									plugins:
 											"advlist autolink lists link image charmap preview anchor \
 											searchreplace visualblocks code fullscreen table emoticons nonbreaking \
-											insertdatetime media table code help wordcount",
+											insertdatetime media table help wordcount",
 									toolbar:
 											"undo redo | styles | bold italic | \
 											alignleft aligncenter alignright | \
-											table visualblocks code|\
+											image media table visualblocks code|\
 											nonbreaking bullist numlist | removeformat",
 									style_formats: [
 											{
