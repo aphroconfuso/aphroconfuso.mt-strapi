@@ -19,10 +19,6 @@
     "intro": {
       "type": "richtext",
       "required": true
-    },
-    "urlPath": {
-      "type": "string",
-      "required": true
     }
   }
 }

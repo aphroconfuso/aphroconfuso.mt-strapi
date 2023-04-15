@@ -20,10 +20,6 @@
       "type": "richtext",
       "required": true
     },
-    "urlPath": {
-      "type": "string",
-      "required": true
-    },
     "entry": {
       "type": "component",
       "repeatable": true,
