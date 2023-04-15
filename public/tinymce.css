@@ -40,3 +40,7 @@ u {
 	text-decoration: none;
 	white-space: nowrap;
 }
+
+em, i {
+	font-style: italic;
+}
