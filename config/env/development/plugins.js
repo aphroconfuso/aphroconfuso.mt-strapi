@@ -51,8 +51,8 @@ module.exports = ({env}) => ({
 							editorConfig: {
 									language: "en",
 									height: 500,
-									menubar: false,
-									extended_valid_elements: "span, img, small",
+								menubar: false,
+									valid_elements: "p[class],em,strong,h4,h5,h6,ul,ol,li,code,img,figure,figcaption",
 									forced_root_block: "",
 									convert_urls: false,
 									entity_encoding: "raw",
@@ -63,7 +63,7 @@ module.exports = ({env}) => ({
 									toolbar:
 											"undo redo | styles | bold italic | \
 											alignleft aligncenter alignright | \
-											image media table visualblocks code|\
+											image visualblocks code|\
 											nonbreaking bullist numlist | removeformat",
 									style_formats: [
 											{
