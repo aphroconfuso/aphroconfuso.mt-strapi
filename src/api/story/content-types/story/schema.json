@@ -18,7 +18,7 @@
     },
     "introduction": {
       "type": "richtext",
-      "required": true
+      "required": false
     },
     "title": {
       "type": "string",
@@ -200,7 +200,7 @@
     "promoImage": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
