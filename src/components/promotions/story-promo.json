@@ -30,6 +30,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "priority": {
+      "type": "integer",
+      "max": 10,
+      "required": true,
+      "default": 10
     }
   }
 }

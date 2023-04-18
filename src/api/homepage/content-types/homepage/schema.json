@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "appointments": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::appointment.appointment"
+    },
+    "promos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "promotions.story-promo",
+      "required": true,
+      "max": 10,
+      "min": 6
+    },
+    "showNewsletter": {
+      "type": "boolean",
+      "default": true
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "Layout 1",
+        "Layout 2",
+        "Layout 3",
+        "Layout 4",
+        "Layout 5"
+      ],
+      "default": "Layout 1",
+      "required": true
+    }
+  }
+}
