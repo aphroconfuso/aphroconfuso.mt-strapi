@@ -1,5 +1,6 @@
 'use strict';
 
+// Auth example
 // module.exports = {
 //   register({ strapi }) {
 //     const extensionService = strapi.plugin('graphql').service('extension');
