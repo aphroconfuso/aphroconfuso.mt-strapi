@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "style_guide_entries",
+  "info": {
+    "singularName": "style-guide-entry",
+    "pluralName": "style-guide-entries",
+    "displayName": "StyleGuideEntry"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "term": {
+      "type": "string",
+      "required": true
+    },
+    "definition": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
