@@ -13,11 +13,11 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "richtext",
+      "type": "string",
       "required": true
     },
     "body": {
-      "type": "string",
+      "type": "richtext",
       "required": true
     }
   }

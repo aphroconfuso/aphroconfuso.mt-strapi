@@ -17,7 +17,8 @@
       "required": true
     },
     "body": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     }
   }
 }
