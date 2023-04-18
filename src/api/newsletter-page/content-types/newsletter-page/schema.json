@@ -16,7 +16,7 @@
       "type": "richtext",
       "required": true
     },
-    "intro": {
+    "body": {
       "type": "string",
       "required": true
     }
