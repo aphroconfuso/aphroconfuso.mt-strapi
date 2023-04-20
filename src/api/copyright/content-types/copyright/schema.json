@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "terms_statements",
+  "collectionName": "copyrights",
   "info": {
-    "singularName": "terms-statement",
-    "pluralName": "terms-statements",
-    "displayName": "TermsStatement"
+    "singularName": "copyright",
+    "pluralName": "copyrights",
+    "displayName": "Copyright"
   },
   "options": {
     "draftAndPublish": true

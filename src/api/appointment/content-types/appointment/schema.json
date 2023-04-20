@@ -24,35 +24,6 @@
       "type": "datetime",
       "required": true
     },
-    "issueYear": {
-      "type": "enumeration",
-      "enum": [
-        "s. 2023",
-        "s. 2024",
-        "s. 2025",
-        "s. 2026",
-        "s. 2027"
-      ],
-      "required": true
-    },
-    "issueMonth": {
-      "type": "enumeration",
-      "enum": [
-        "Jannar",
-        "Frar",
-        "Marzu",
-        "April",
-        "Mejju",
-        "Ġunju",
-        "Lulju",
-        "Awwissu",
-        "Settembru",
-        "Ottubru",
-        "Novembru",
-        "Diċembru"
-      ],
-      "required": true
-    },
     "stories": {
       "type": "relation",
       "relation": "oneToMany",
