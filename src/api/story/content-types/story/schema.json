@@ -182,6 +182,31 @@
     },
     "publicationHistory": {
       "type": "richtext"
+    },
+    "promoImageMobile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "showImagePromo": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "imagesPosition": {
+      "type": "integer"
     }
   }
 }
