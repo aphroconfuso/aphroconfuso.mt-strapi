@@ -10,7 +10,7 @@
 font-family: 'Alegreya Sans', sans-serif;
 font-family: 'Noto Sans Cuneiform', sans-serif; */
 
-p, div, small, h3, h4, h5, h6 {
+p, div, small, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
 }
@@ -43,4 +43,12 @@ u {
 
 em, i {
 	font-style: italic;
+}
+
+strong, h4 {
+	font-weight: 600;
+}
+
+a {
+	color: #009;
 }
