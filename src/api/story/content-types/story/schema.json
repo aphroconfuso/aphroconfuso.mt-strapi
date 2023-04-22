@@ -179,6 +179,9 @@
     "dateTimePublication": {
       "type": "datetime",
       "required": true
+    },
+    "publicationHistory": {
+      "type": "richtext"
     }
   }
 }
