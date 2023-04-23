@@ -30,6 +30,13 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "mobileImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
