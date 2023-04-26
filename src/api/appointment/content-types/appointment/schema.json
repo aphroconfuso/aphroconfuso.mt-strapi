@@ -30,7 +30,7 @@
       "target": "api::story.story"
     },
     "moreToCome": {
-      "type": "text"
+      "type": "richtext"
     }
   }
 }
