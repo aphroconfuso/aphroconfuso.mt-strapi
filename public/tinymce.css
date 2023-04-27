@@ -24,7 +24,7 @@ body {
  /* #f9f9f6; */
 }
 
-p {
+p, h4 {
 	/* color: #4b4744; */
 	font-family: 'Alegreya', sans-serif !important;
 	font-size: 1.2rem;
@@ -36,6 +36,10 @@ p.enjambed {
 	margin-bottom: 0;
 }
 
+blockquote {
+	font-size: 1rem;
+}
+
 u {
 	text-decoration: none;
 	white-space: nowrap;
@@ -45,7 +49,7 @@ em, i {
 	font-style: italic;
 }
 
-strong, h4 {
+strong, h6 {
 	font-weight: 600;
 }
 
