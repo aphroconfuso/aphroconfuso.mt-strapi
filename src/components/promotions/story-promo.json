@@ -41,7 +41,7 @@
     },
     "mobilePriority": {
       "type": "integer",
-      "required": true,
+      "required": false,
       "min": 1,
       "unique": true
     }
