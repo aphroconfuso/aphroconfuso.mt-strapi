@@ -43,7 +43,8 @@
       "type": "integer",
       "required": false,
       "min": 1,
-      "unique": false
+      "unique": false,
+      "default": 9
     }
   }
 }
