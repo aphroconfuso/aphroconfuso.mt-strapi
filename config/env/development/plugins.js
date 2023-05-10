@@ -59,12 +59,12 @@ module.exports = ({env}) => ({
 									plugins:
 											"advlist autolink lists link image charmap preview anchor \
 											searchreplace visualblocks code fullscreen table emoticons nonbreaking \
-											insertdatetime media table help wordcount",
+											insertdatetime media table help wordcount directionality",
 									toolbar:
 											"undo redo | styles | bold italic | \
 											alignleft aligncenter alignright | \
 											image visualblocks code|\
-											nonbreaking bullist numlist | removeformat",
+											nonbreaking bullist numlist | ltr rtl | removeformat",
 									style_formats: [
 											{
 													title: "Headings",
@@ -82,6 +82,26 @@ module.exports = ({env}) => ({
 																title: "Paragraph - enjambed",
 																block: "p",
 																classes: "enjambed"
+															},
+															{
+																title: "Paragraph - RTL exception",
+																block: "p",
+																classes: "rtl"
+															},
+															{
+																title: "Paragraph - LTR exception",
+																block: "p",
+																classes: "ltr"
+															},
+															{
+																title: "Span - RTL exception",
+																block: "span",
+																classes: "rtl"
+															},
+															{
+																title: "Span - LTR exception",
+																block: "span",
+																classes: "ltr"
 															},
 															{ title: "Blockquote", block: "blockquote" },
 													],

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "international-media",
     "pluralName": "international-medias",
-    "displayName": "InternationalMedia"
+    "displayName": "InternationalMedia",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -31,7 +32,10 @@
         "Français",
         "Hrvatski",
         "Italiano",
-        "Malti"
+        "Malti",
+        "Nederlands",
+        "Polski",
+        "Română"
       ],
       "required": true
     }
