@@ -4,7 +4,8 @@
   "info": {
     "singularName": "style-guide-entry",
     "pluralName": "style-guide-entries",
-    "displayName": "StyleGuideEntry"
+    "displayName": "StyleGuideEntry",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,11 +14,19 @@
   "attributes": {
     "term": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "definition": {
       "type": "richtext",
       "required": true
+    },
+    "Public": {
+      "type": "boolean",
+      "default": false
+    },
+    "notWords": {
+      "type": "string"
     }
   }
 }

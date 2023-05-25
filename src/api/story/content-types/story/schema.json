@@ -155,7 +155,7 @@
     },
     "prominentMentions": {
       "type": "integer",
-      "default": 3
+      "default": 1
     },
     "coda": {
       "type": "richtext"
