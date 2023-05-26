@@ -210,6 +210,20 @@
     "imagesPositionText": {
       "type": "string",
       "maxLength": 50
+    },
+    "useSquareOnMobile": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "imagesType": {
+      "type": "enumeration",
+      "enum": [
+        "Wisgħa tat-test",
+        "Wisgħa tat-test 16:9",
+        "Wisgħa tal-paġna 16:9"
+      ],
+      "default": "Wisgħa tat-test 16:9"
     }
   }
 }
