@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "processes",
+  "info": {
+    "singularName": "process",
+    "pluralName": "processes",
+    "displayName": "Process"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "Text": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

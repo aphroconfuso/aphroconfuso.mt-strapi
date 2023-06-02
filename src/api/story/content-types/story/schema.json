@@ -181,7 +181,8 @@
       "required": true
     },
     "publicationHistory": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "promoImageMobile": {
       "type": "media",
