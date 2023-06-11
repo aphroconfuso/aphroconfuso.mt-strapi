@@ -229,6 +229,10 @@
         "Wisgħa tal-paġna 16:9"
       ],
       "default": "Wisgħa tat-test 16:9"
+    },
+    "useDefaultPodcastMessage": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
