@@ -159,7 +159,7 @@
     },
     "prominentMentions": {
       "type": "integer",
-      "default": 1
+      "default": 0
     },
     "coda": {
       "type": "richtext"
@@ -233,6 +233,9 @@
     "useDefaultPodcastMessage": {
       "type": "boolean",
       "default": true
+    },
+    "triggerWarning": {
+      "type": "richtext"
     }
   }
 }
