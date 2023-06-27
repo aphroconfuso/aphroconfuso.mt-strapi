@@ -45,6 +45,15 @@
       "min": 1,
       "unique": false,
       "default": 9
+    },
+    "crop": {
+      "type": "enumeration",
+      "enum": [
+        "landscape",
+        "square",
+        "uncropped"
+      ],
+      "default": "landscape"
     }
   }
 }
