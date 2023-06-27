@@ -46,7 +46,7 @@
       "unique": false,
       "default": 9
     },
-    "crop": {
+    "imageCrop": {
       "type": "enumeration",
       "enum": [
         "landscape",
