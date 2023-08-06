@@ -59,9 +59,9 @@ module.exports = ({env}) => ({
 									plugins:
 											"advlist autolink lists link image charmap preview anchor \
 											searchreplace visualblocks code fullscreen table emoticons nonbreaking \
-											insertdatetime media table help wordcount directionality",
+											insertdatetime media table help wordcount directionality paste",
 									toolbar:
-											"undo redo | styles | bold italic | \
+											"undo redo | styles | paste | bold italic | \
 											alignleft aligncenter alignright | \
 											image visualblocks code|\
 											nonbreaking bullist numlist | ltr rtl | removeformat",

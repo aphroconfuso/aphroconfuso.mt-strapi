@@ -236,6 +236,26 @@
     },
     "triggerWarning": {
       "type": "richtext"
+    },
+    "imageBorderColour": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "string",
+      "maxLength": 7,
+      "minLength": 7,
+      "regex": "^#(?:[0-9a-fA-F]{3}){1,2}$"
+    },
+    "useSeparators": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "boolean",
+      "default": false
     }
   }
 }

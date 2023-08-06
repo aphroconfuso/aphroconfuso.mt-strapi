@@ -26,7 +26,7 @@
       "repeatable": true,
       "component": "promotions.story-promo",
       "required": true,
-      "max": 12,
+      "max": 24,
       "min": 6
     },
     "showNewsletter": {
