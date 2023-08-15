@@ -62,7 +62,6 @@ module.exports = ({env}) => ({
 											insertdatetime media table help wordcount directionality paste",
 									toolbar:
 											"undo redo | styles | paste | bold italic | \
-											alignleft aligncenter alignright | \
 											image visualblocks code|\
 											nonbreaking bullist numlist | ltr rtl | removeformat",
 									style_formats: [
@@ -84,9 +83,34 @@ module.exports = ({env}) => ({
 																classes: "enjambed"
 															},
 															{
-																title: "Paragraph - RTL exception",
+																title: "Paragraph - right-aligned",
 																block: "p",
-																classes: "rtl"
+																classes: "right-aligned"
+															},
+															{
+																title: "Paragraph - centred",
+																block: "p",
+																classes: "centred"
+															},
+															{
+																title: "Paragraph - justified",
+																block: "p",
+																classes: "justified"
+															},
+															{
+																title: "Paragraph - FX 1",
+																block: "p",
+																classes: "fx-1"
+															},
+															{
+																title: "Paragraph - FX 2",
+																block: "p",
+																classes: "fx-2"
+															},
+															{
+																title: "Paragraph - FX 3",
+																block: "p",
+																classes: "fx-3"
 															},
 															{
 																title: "Paragraph - LTR exception",
@@ -102,6 +126,21 @@ module.exports = ({env}) => ({
 																title: "Span - LTR exception",
 																block: "span",
 																classes: "ltr"
+															},
+															{
+																title: "Span - FX 100",
+																block: "span",
+																classes: "fx-100"
+															},
+															{
+																title: "Span - FX 200",
+																block: "span",
+																classes: "fx-200"
+															},
+															{
+																title: "Span - FX 300",
+																block: "span",
+																classes: "fx-300"
 															},
 															{ title: "Blockquote", block: "blockquote" },
 													],
