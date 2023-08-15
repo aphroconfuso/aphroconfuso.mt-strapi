@@ -77,7 +77,8 @@ module.exports = ({env}) => ({
 													title: "Text",
 													items: [
 															{ title: "Paragraph", block: "p" },
-															{
+															{ title: "Blockquote", block: "blockquote" },
+														{
 																title: "Paragraph - enjambed",
 																block: "p",
 																classes: "enjambed"
@@ -113,9 +114,29 @@ module.exports = ({env}) => ({
 																classes: "fx-3"
 															},
 															{
+																title: "Paragraph - RTL exception",
+																block: "p",
+																classes: "rtl"
+															},
+															{
 																title: "Paragraph - LTR exception",
 																block: "p",
 																classes: "ltr"
+															},
+															{
+																title: "Span - FX 1",
+																block: "span",
+																classes: "fx-1"
+															},
+															{
+																title: "Span - FX 2",
+																block: "span",
+																classes: "fx-2"
+															},
+															{
+																title: "Span - FX 3",
+																block: "span",
+																classes: "fx-3"
 															},
 															{
 																title: "Span - RTL exception",
@@ -127,22 +148,6 @@ module.exports = ({env}) => ({
 																block: "span",
 																classes: "ltr"
 															},
-															{
-																title: "Span - FX 100",
-																block: "span",
-																classes: "fx-100"
-															},
-															{
-																title: "Span - FX 200",
-																block: "span",
-																classes: "fx-200"
-															},
-															{
-																title: "Span - FX 300",
-																block: "span",
-																classes: "fx-300"
-															},
-															{ title: "Blockquote", block: "blockquote" },
 													],
 											},
 								],
