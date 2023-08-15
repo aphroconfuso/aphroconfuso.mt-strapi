@@ -59,10 +59,9 @@ module.exports = ({env}) => ({
 									plugins:
 											"advlist autolink lists link image charmap preview anchor \
 											searchreplace visualblocks code fullscreen table emoticons nonbreaking \
-											insertdatetime media table help wordcount directionality",
+											insertdatetime media table help wordcount directionality paste",
 									toolbar:
-											"undo redo | styles | bold italic | \
-											alignleft aligncenter alignright | \
+											"undo redo | styles | paste | bold italic | \
 											image visualblocks code|\
 											nonbreaking bullist numlist | ltr rtl | removeformat",
 									style_formats: [
@@ -78,10 +77,41 @@ module.exports = ({env}) => ({
 													title: "Text",
 													items: [
 															{ title: "Paragraph", block: "p" },
-															{
+															{ title: "Blockquote", block: "blockquote" },
+														{
 																title: "Paragraph - enjambed",
 																block: "p",
 																classes: "enjambed"
+															},
+															{
+																title: "Paragraph - right-aligned",
+																block: "p",
+																classes: "right-aligned"
+															},
+															{
+																title: "Paragraph - centred",
+																block: "p",
+																classes: "centred"
+															},
+															{
+																title: "Paragraph - justified",
+																block: "p",
+																classes: "justified"
+															},
+															{
+																title: "Paragraph - FX 1",
+																block: "p",
+																classes: "fx-1"
+															},
+															{
+																title: "Paragraph - FX 2",
+																block: "p",
+																classes: "fx-2"
+															},
+															{
+																title: "Paragraph - FX 3",
+																block: "p",
+																classes: "fx-3"
 															},
 															{
 																title: "Paragraph - RTL exception",
@@ -94,6 +124,21 @@ module.exports = ({env}) => ({
 																classes: "ltr"
 															},
 															{
+																title: "Span - FX 1",
+																block: "span",
+																classes: "fx-1"
+															},
+															{
+																title: "Span - FX 2",
+																block: "span",
+																classes: "fx-2"
+															},
+															{
+																title: "Span - FX 3",
+																block: "span",
+																classes: "fx-3"
+															},
+															{
 																title: "Span - RTL exception",
 																block: "span",
 																classes: "rtl"
@@ -103,7 +148,6 @@ module.exports = ({env}) => ({
 																block: "span",
 																classes: "ltr"
 															},
-															{ title: "Blockquote", block: "blockquote" },
 													],
 											},
 								],
