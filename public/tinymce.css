@@ -35,7 +35,27 @@ p, h4 {
 p.enjambed {
 	margin-bottom: 0;
 }
-
+p.justified {
+	text-align: justify;
+}
+p.right-aligned {
+	text-align: right;
+}
+p.centred {
+	text-align: center;
+}
+.fx-1, .fx-2, .fx-3 {
+	background-color: aquamarine;
+}
+.rtl, .ltr {
+	background-color: coral;
+}
+.ltr {
+	direction: ltr;
+}
+.rtl {
+	direction: rtl;
+}
 blockquote {
 	font-size: 1rem;
 }
