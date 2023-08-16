@@ -256,6 +256,24 @@
       },
       "type": "boolean",
       "default": false
+    },
+    "useProseStyling": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "boolean",
+      "default": false
+    },
+    "dontUseDropCaps": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "boolean",
+      "default": false
     }
   }
 }

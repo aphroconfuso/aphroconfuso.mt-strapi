@@ -21,7 +21,7 @@
       "relation": "oneToOne",
       "target": "api::appointment.appointment"
     },
-    "promos": {
+	    "promos": {
       "type": "component",
       "repeatable": true,
       "component": "promotions.story-promo",
@@ -29,7 +29,23 @@
       "max": 24,
       "min": 6
     },
-    "showNewsletter": {
+    "imagePromos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "promotions.story-promo",
+      "required": true,
+      "max": 24,
+      "min": 0
+    },
+    "poetryPromos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "promotions.story-promo",
+      "required": true,
+      "max": 24,
+      "min": 0
+    },
+		"showNewsletter": {
       "type": "boolean",
       "default": true
     },
@@ -51,6 +67,16 @@
       ],
       "default": "Layout 1",
       "required": true
+    },
+    "showPodcastPromo": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "boolean",
+      "default": true,
+      "required": false
     }
   }
 }
