@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_promotions_story_image_promos",
+  "info": {
+    "displayName": "StoryImagePromo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "quotation": {
+      "type": "boolean",
+      "default": true
+    },
+    "story": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::story.story"
+    },
+    "mobilePriority": {
+      "type": "integer",
+      "required": false,
+      "min": 1,
+      "unique": false,
+      "default": 9
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "mobileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageCrop": {
+      "type": "enumeration",
+      "enum": [
+        "landscape",
+        "square",
+        "uncropped"
+      ],
+      "default": "landscape"
+    }
+  }
+}

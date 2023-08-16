@@ -32,7 +32,7 @@
     "imagePromos": {
       "type": "component",
       "repeatable": true,
-      "component": "promotions.story-promo",
+      "component": "promotions.story-image-promo",
       "required": true,
       "max": 24,
       "min": 0
@@ -40,7 +40,7 @@
     "poetryPromos": {
       "type": "component",
       "repeatable": true,
-      "component": "promotions.story-promo",
+      "component": "promotions.story-poem-promo",
       "required": true,
       "max": 24,
       "min": 0

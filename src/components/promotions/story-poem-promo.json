@@ -1,13 +1,13 @@
 {
-  "collectionName": "components_promotions_story_promos",
+  "collectionName": "components_promotions_story_poem_promos",
   "info": {
-    "displayName": "StoryPromo",
+    "displayName": "StoryPoemPromo",
     "description": ""
   },
   "options": {},
   "attributes": {
     "text": {
-      "type": "text"
+      "type": "richtext"
     },
     "quotation": {
       "type": "boolean",
@@ -18,10 +18,12 @@
       "relation": "oneToOne",
       "target": "api::story.story"
     },
-    "letter": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::letter.letter"
+    "mobilePriority": {
+      "type": "integer",
+      "required": false,
+      "min": 1,
+      "unique": false,
+      "default": 9
     }
   }
 }
