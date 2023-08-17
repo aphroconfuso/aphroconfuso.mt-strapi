@@ -52,7 +52,7 @@ module.exports = ({env}) => ({
 									language: "en",
 									height: 500,
 									menubar: false,
-									valid_elements: "a[href],blockquote,p[class],span[class],em,strong,h4,h5,h6,ul,ol,li,code,img,figure,figcaption",
+									valid_elements: "a[href],blockquote,p[class],i[class],em,strong,h4,h5,h6,ul,ol,li,code,img,figure,figcaption",
 									forced_root_block: "",
 									convert_urls: false,
 									entity_encoding: "raw",
@@ -125,27 +125,27 @@ module.exports = ({env}) => ({
 															},
 															{
 																title: "Span - FX 1",
-																block: "span",
+																block: "i",
 																classes: "fx-1"
 															},
 															{
 																title: "Span - FX 2",
-																block: "span",
+																block: "i",
 																classes: "fx-2"
 															},
 															{
 																title: "Span - FX 3",
-																block: "span",
+																block: "i",
 																classes: "fx-3"
 															},
 															{
 																title: "Span - RTL exception",
-																block: "span",
+																block: "i",
 																classes: "rtl"
 															},
 															{
 																title: "Span - LTR exception",
-																block: "span",
+																block: "i",
 																classes: "ltr"
 															},
 													],
