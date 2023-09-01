@@ -84,12 +84,6 @@
       "target": "api::event.event",
       "mappedBy": "people"
     },
-    "sequences": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::sequence.sequence",
-      "mappedBy": "authors"
-    },
     "pronoun": {
       "type": "enumeration",
       "enum": [

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sequence",
     "pluralName": "sequences",
-    "displayName": "Sequence"
+    "displayName": "Sequence",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,14 +20,14 @@
       "type": "string",
       "required": true
     },
-    "body": {
+    "description": {
       "type": "richtext"
     },
-    "authors": {
+    "stories": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::person.person",
-      "inversedBy": "sequences"
+      "relation": "oneToMany",
+      "target": "api::story.story",
+      "mappedBy": "sequence"
     }
   }
 }

@@ -138,6 +138,7 @@
     "type": {
       "type": "enumeration",
       "enum": [
+        "Djarju",
         "Esej",
         "Memoir",
         "Poeżija",
@@ -274,6 +275,20 @@
       },
       "type": "boolean",
       "default": false
+    },
+    "diaryDate": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "date"
+    },
+    "sequence": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sequence.sequence",
+      "inversedBy": "stories"
     }
   }
 }
