@@ -1,7 +1,8 @@
 {
   "collectionName": "components_quotes_epigraphs",
   "info": {
-    "displayName": "Epigraphs"
+    "displayName": "Epigraphs",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,7 +12,7 @@
     },
     "attribution": {
       "type": "string",
-      "required": true
+      "required": false
     }
   }
 }
