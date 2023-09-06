@@ -32,7 +32,7 @@
     "sequences": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::appointment.appointment",
+      "target": "api::sequence.sequence",
       "inversedBy": "collections"
     }
   }
