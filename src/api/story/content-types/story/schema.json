@@ -289,6 +289,14 @@
       "relation": "manyToOne",
       "target": "api::sequence.sequence",
       "inversedBy": "stories"
+    },
+    "sequenceEpisodeNumber": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "integer"
     }
   }
 }

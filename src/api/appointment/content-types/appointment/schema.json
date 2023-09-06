@@ -35,6 +35,12 @@
     },
     "moreToCome": {
       "type": "richtext"
+    },
+    "collections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::collection.collection",
+      "mappedBy": "sequences"
     }
   }
 }

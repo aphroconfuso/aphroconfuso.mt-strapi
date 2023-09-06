@@ -4,7 +4,8 @@
   "info": {
     "singularName": "collection",
     "pluralName": "collections",
-    "displayName": "Collection"
+    "displayName": "Collection",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,6 +27,12 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::story.story",
+      "inversedBy": "collections"
+    },
+    "sequences": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::appointment.appointment",
       "inversedBy": "collections"
     }
   }
