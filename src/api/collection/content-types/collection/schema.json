@@ -28,12 +28,6 @@
       "relation": "manyToMany",
       "target": "api::story.story",
       "inversedBy": "collections"
-    },
-    "sequences": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::sequence.sequence",
-      "inversedBy": "collections"
     }
   }
 }
