@@ -24,6 +24,11 @@
       "min": 1,
       "unique": false,
       "default": 9
+    },
+    "interfaceLabel": {
+      "type": "string",
+      "required": true,
+      "private": true
     }
   }
 }

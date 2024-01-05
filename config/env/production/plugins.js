@@ -68,7 +68,6 @@ module.exports = ({env}) => ({
 											{
 													title: "Headings",
 													items: [
-															{ title: "h4", block: "h4" },
 															{ title: "h5", block: "h5" },
 															{ title: "h6", block: "h6" },
 													],

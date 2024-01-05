@@ -305,6 +305,15 @@
         }
       },
       "type": "integer"
+    },
+    "moreToCome": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "boolean",
+      "default": false
     }
   }
 }

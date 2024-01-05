@@ -49,6 +49,11 @@
         "uncropped"
       ],
       "default": "landscape"
+    },
+    "interfaceLabel": {
+      "type": "string",
+      "required": true,
+      "private": true
     }
   }
 }
