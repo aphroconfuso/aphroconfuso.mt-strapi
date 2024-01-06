@@ -20,6 +20,8 @@
     "codemirror": "5.65.11",
     "pg": "^8.10.0",
     "strapi-plugin-duplicate-button": "^1.1.7",
+    "strapi-plugin-github-action-dispatch": "^1.0.0",
+    "strapi-plugin-github-actions": "^0.1.0",
     "strapi-plugin-preview-button": "^1.1.2",
     "strapi-plugin-responsive-image": "^1.0.1"
   },

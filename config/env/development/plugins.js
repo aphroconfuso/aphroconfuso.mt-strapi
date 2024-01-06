@@ -42,6 +42,15 @@ module.exports = ({env}) => ({
         },
       ],
     },
+	},
+  'strapi-plugin-github-action-dispatch': {
+    enabled: true,
+    config: {
+      token: env('GITHUB_TOKEN'),
+      repository: 'aphroconfuso/aphroconfuso.github.io',
+      workflow: 'ci-provi-content.yml',
+      ref: 'provi',
+    }
   },
 	tinymce: {
 			enabled: true,
