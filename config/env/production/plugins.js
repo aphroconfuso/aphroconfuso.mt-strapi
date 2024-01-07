@@ -1,7 +1,4 @@
 module.exports = ({env}) => ({
-	'content-versioning': {
-		enabled: true,
-	},
 	'duplicate-button': {
 		enabled: true,
 	},
@@ -43,15 +40,16 @@ module.exports = ({env}) => ({
       ],
     },
   },
-  'strapi-plugin-github-action-dispatch': {
-    enabled: true,
-    config: {
-      token: env('GITHUB_TOKEN'),
-      repository: 'aphroconfuso/aphroconfuso.github.io',
-      workflow: 'ci-provi-content.yml',
-      ref: 'provi',
-    }
-  },
+	'update-static-content': {
+		enabled: true,
+		config: {
+			githubToken: env('GITHUB_TOKEN'),
+			owner: 'aphroconfuso',
+			repo: 'aphroconfuso.github.io',
+			workflowId: 'ci-provi-content.yml',
+			branch: 'provi',
+		},
+	},
 	tinymce: {
 			enabled: true,
 			config: {

@@ -10,7 +10,6 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@notum-cz/strapi-plugin-content-versioning": "^0.4.7",
     "@sklinet/strapi-plugin-tinymce": "^1.0.4",
     "@strapi/plugin-graphql": "^4.11.0",
     "@strapi/plugin-i18n": "4.11.0",
@@ -20,10 +19,9 @@
     "codemirror": "5.65.11",
     "pg": "^8.10.0",
     "strapi-plugin-duplicate-button": "^1.1.7",
-    "strapi-plugin-github-action-dispatch": "^1.0.0",
-    "strapi-plugin-github-actions": "^0.1.0",
     "strapi-plugin-preview-button": "^1.1.2",
-    "strapi-plugin-responsive-image": "^1.0.1"
+    "strapi-plugin-responsive-image": "^1.0.1",
+    "strapi-plugin-update-static-content": "^1.0.8"
   },
   "contributors": [
     "Joe Gatt",
@@ -33,7 +31,7 @@
     "uuid": "6c792829-21cc-45e9-bf13-07e8265cc3de"
   },
   "engines": {
-    "node": ">=14.19.1 <=18.x.x",
+    "node": ">=14.19.1 <=16.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
