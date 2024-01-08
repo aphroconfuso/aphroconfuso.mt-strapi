@@ -33,7 +33,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::collection.collection",
-      "mappedBy": "sequences"
+      "inversedBy": "sequences"
     }
   }
 }
