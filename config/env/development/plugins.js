@@ -45,9 +45,9 @@ module.exports = ({env}) => ({
 		config: {
 			githubToken: env('GITHUB_TOKEN'),
 			owner: 'aphroconfuso',
-			repo: 'aphroconfuso.github.io',
+			repo: 'aphroconfuso.mt-eleventy',
 			workflowId: 'ci-provi-content.yml',
-			branch: 'provi',
+			branch: 'main',
 		},
 	},
 	tinymce: {
