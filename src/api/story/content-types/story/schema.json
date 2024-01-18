@@ -314,6 +314,11 @@
       },
       "type": "boolean",
       "default": false
+    },
+    "audio": {
+      "type": "component",
+      "repeatable": true,
+      "component": "promotions.audio"
     }
   }
 }
