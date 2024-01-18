@@ -21,7 +21,7 @@
       "relation": "oneToOne",
       "target": "api::appointment.appointment"
     },
-	    "promos": {
+    "promos": {
       "type": "component",
       "repeatable": true,
       "component": "promotions.story-promo",
@@ -45,7 +45,7 @@
       "max": 24,
       "min": 0
     },
-		"showNewsletter": {
+    "showNewsletter": {
       "type": "boolean",
       "default": true
     },
@@ -77,6 +77,11 @@
       "type": "boolean",
       "default": true,
       "required": false
+    },
+    "audioPromos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "promotions.audio"
     }
   }
 }

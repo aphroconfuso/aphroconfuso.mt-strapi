@@ -1,31 +1,27 @@
 {
   "collectionName": "components_promotions_audio",
   "info": {
-    "displayName": "Audio",
+    "displayName": "AudioPromo",
     "icon": "volumeUp",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "audioUrl": {
-      "type": "string",
-      "maxLength": 256,
-      "minLength": 11
-    },
-    "audioLengthMinutes": {
-      "type": "integer",
-      "required": true
-    },
-    "audioNote": {
+    "note": {
       "type": "richtext"
-    },
-    "defaultAudio": {
-      "type": "boolean",
-      "default": false
     },
     "highlight": {
       "type": "boolean",
       "default": false
+    },
+    "story": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::story.story"
+    },
+    "interfaceLabel": {
+      "type": "string",
+      "required": true
     }
   }
 }
