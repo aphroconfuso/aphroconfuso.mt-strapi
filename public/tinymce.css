@@ -76,3 +76,7 @@ strong, h6 {
 a {
 	color: #009;
 }
+table {
+	height: 100px;
+	width: 100%;
+}

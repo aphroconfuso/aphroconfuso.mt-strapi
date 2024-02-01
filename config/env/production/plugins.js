@@ -15,31 +15,31 @@ module.exports = ({env}) => ({
       },
     },
 	},
-  'preview-button': {
+	'preview-button': {
 		enabled: true,
-    config: {
-      contentTypes: [
-        {
-          uid: 'api::home.home',
-          draft: {
-            url: 'https://provi.aphroconfuso.mt',
-          },
-          published: {
-            url: 'https://provi.aphroconfuso.mt',
-          },
-        },
-        {
-          uid: 'api::story.story',
-          draft: {
-            url: 'https://provi.aphroconfuso.mt/{title}',
-          },
-          published: {
-            url: 'https://provi.aphroconfuso.mt/{title}',
-          },
-        },
-      ],
-    },
-  },
+		config: {
+			contentTypes: [
+				{
+					uid: 'api::home.home',
+					draft: {
+						url: 'https://provi.aphroconfuso.mt',
+					},
+					published: {
+						url: 'https://provi.aphroconfuso.mt',
+					},
+				},
+				{
+					uid: 'api::story.story',
+					draft: {
+						url: 'https://provi.aphroconfuso.mt/{title}',
+					},
+					published: {
+						url: 'https://provi.aphroconfuso.mt/{title}',
+					},
+				},
+			],
+		},
+	},
 	'update-static-content': {
 		enabled: true,
 		config: {
@@ -59,18 +59,18 @@ module.exports = ({env}) => ({
 									language: "en",
 									height: 500,
 									menubar: false,
-									valid_elements: "a[href],blockquote,p[class],i[class],em,strong,h4,h5,h6,ul,ol,li,code,img,figure,figcaption",
+									valid_elements: "a[href],blockquote,p[class],i[class],em,strong,h4,h5,h6,ul,ol,li,code,img,figure,figcaption,table,tbody,thead,tr,th,td[colspan|rowspan]",
 									forced_root_block: "",
 									convert_urls: false,
 									entity_encoding: "raw",
 									plugins:
 											"advlist autolink lists link image charmap preview anchor \
-											searchreplace visualblocks code fullscreen table emoticons nonbreaking \
+											searchreplace visualblocks code fullscreen emoticons nonbreaking \
 											insertdatetime media table help wordcount directionality paste",
 									toolbar:
-											"undo redo | styles | paste | bold italic | \
+											"undo redo | styles | paste | nonbreaking bold italic | \
 											image visualblocks code|\
-											nonbreaking bullist numlist | ltr rtl | removeformat",
+											table bullist numlist | ltr rtl | removeformat",
 									style_formats: [
 											{
 													title: "Headings",
@@ -131,27 +131,27 @@ module.exports = ({env}) => ({
 															},
 															{
 																title: "Span - FX 1",
-																block: "i",
+																inline: "i",
 																classes: "fx-1"
 															},
 															{
 																title: "Span - FX 2",
-																block: "i",
+																inline: "i",
 																classes: "fx-2"
 															},
 															{
 																title: "Span - FX 3",
-																block: "i",
+																inline: "i",
 																classes: "fx-3"
 															},
 															{
 																title: "Span - RTL exception",
-																block: "i",
+																inline: "i",
 																classes: "rtl"
 															},
 															{
 																title: "Span - LTR exception",
-																block: "i",
+																inline: "i",
 																classes: "ltr"
 															},
 													],
