@@ -320,6 +320,16 @@
       "type": "component",
       "repeatable": true,
       "component": "promotions.audio"
+    },
+    "authorsType": {
+      "type": "enumeration",
+      "enum": [
+        "solo: A",
+        "kollaborazzjoni: A, B, C u D",
+        "kollettiva: X [A, B, C, D]",
+        "assistita: A ma B, C u D"
+      ],
+      "default": "solo: A"
     }
   }
 }
