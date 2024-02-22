@@ -46,9 +46,7 @@
       "unique": true
     },
     "podcastNote": {
-      "type": "richtext",
-      "minLength": 30,
-      "maxLength": 2500
+      "type": "richtext"
     },
     "letters": {
       "type": "relation",
