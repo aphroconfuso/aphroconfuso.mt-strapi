@@ -34,6 +34,26 @@
       "relation": "manyToMany",
       "target": "api::sequence.sequence",
       "mappedBy": "collections"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "minLength": 350
+    },
+    "promoImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "promoImageMobile": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
