@@ -36,24 +36,25 @@
       "mappedBy": "collections"
     },
     "description": {
-      "type": "string",
+      "type": "text",
       "required": true,
       "minLength": 350
     },
     "promoImage": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
-    },
-    "promoImageMobile": {
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
+      ]
+    },
+    "promoImageMobile": {
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
