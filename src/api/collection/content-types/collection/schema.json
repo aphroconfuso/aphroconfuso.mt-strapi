@@ -55,6 +55,14 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "moreToCome": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "continuity": {
+      "type": "text"
     }
   }
 }
