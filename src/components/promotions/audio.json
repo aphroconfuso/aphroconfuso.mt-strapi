@@ -22,6 +22,15 @@
     "interfaceLabel": {
       "type": "string",
       "required": true
+    },
+    "putAfterThisText": {
+      "type": "string"
+    },
+    "audioUrl": {
+      "type": "string"
+    },
+    "audioLengthMinutes": {
+      "type": "string"
     }
   }
 }

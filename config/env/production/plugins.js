@@ -145,6 +145,11 @@ module.exports = ({env}) => ({
 																classes: "fx-3"
 															},
 															{
+																title: "Span - SMALL CAPS",
+																inline: "i",
+																classes: "sc"
+															},
+															{
 																title: "Span - RTL exception",
 																inline: "i",
 																classes: "rtl"
