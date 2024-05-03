@@ -60,10 +60,7 @@
         "Layout 6",
         "Layout 7",
         "Layout 8",
-        "Layout 9",
-        "Layout 10",
-        "Layout 11",
-        "Layout 12"
+        "Layout 9"
       ],
       "default": "Layout 1",
       "required": true

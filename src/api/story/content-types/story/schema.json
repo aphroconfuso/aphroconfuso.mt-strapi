@@ -202,7 +202,7 @@
     },
     "showImagePromo": {
       "type": "boolean",
-      "default": false,
+      "default": true,
       "required": false
     },
     "images": {
@@ -329,6 +329,9 @@
         "assistita: A ma B, C u D"
       ],
       "default": "solo: A"
+    },
+    "podcastDate": {
+      "type": "date"
     }
   }
 }

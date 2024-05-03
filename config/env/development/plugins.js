@@ -107,17 +107,17 @@ module.exports = ({env}) => ({
 															{
 																title: "Paragraph - FX 1",
 																block: "p",
-																classes: "fx-1"
+																classes: "fx1"
 															},
 															{
 																title: "Paragraph - FX 2",
 																block: "p",
-																classes: "fx-2"
+																classes: "fx2"
 															},
 															{
 																title: "Paragraph - FX 3",
 																block: "p",
-																classes: "fx-3"
+																classes: "fx3"
 															},
 															{
 																title: "Paragraph - RTL exception",
@@ -132,17 +132,17 @@ module.exports = ({env}) => ({
 															{
 																title: "Span - FX 1",
 																inline: "i",
-																classes: "fx-1"
+																classes: "fx1"
 															},
 															{
 																title: "Span - FX 2",
 																inline: "i",
-																classes: "fx-2"
+																classes: "fx2"
 															},
 															{
 																title: "Span - FX 3",
 																inline: "i",
-																classes: "fx-3"
+																classes: "fx3"
 															},
 															{
 																title: "Span - SMALL CAPS",
