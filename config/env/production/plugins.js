@@ -85,6 +85,11 @@ module.exports = ({env}) => ({
 															{ title: "Paragraph", block: "p" },
 															{ title: "Blockquote", block: "blockquote" },
 														{
+																title: "Blockquote - enjambed",
+																block: "blockquote",
+																classes: "enjambed"
+															},
+														{
 																title: "Paragraph - enjambed",
 																block: "p",
 																classes: "enjambed"
