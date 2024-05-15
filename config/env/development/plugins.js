@@ -59,7 +59,7 @@ module.exports = ({env}) => ({
 									language: "en",
 									height: 500,
 									menubar: false,
-									valid_elements: "a[href],blockquote,p[class],i[class],em,strong,h4,h5,h6,ul,ol,li,code,img,figure,figcaption,table,tbody,thead,tr,th,td[colspan|rowspan]",
+									valid_elements: "a[href],blockquote[class],p[class],i[class],em,strong,h4,h5,h6,ul,ol,li,code,img,figure,figcaption,table,tbody,thead,tr,th,td[colspan|rowspan]",
 									forced_root_block: "",
 									convert_urls: false,
 									entity_encoding: "raw",
