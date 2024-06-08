@@ -1,6 +1,3 @@
-// This sort order must be retained to ensure that the plugins are loaded in the correct order
-/* eslint-disable sort-imports */
-// prettier-ignore-start
 import ckeditor5Dll from "ckeditor5/build/ckeditor5-dll.js";
 
 import ckeditor5AlignmentDll from "@ckeditor/ckeditor5-alignment/build/alignment.js";
@@ -28,13 +25,11 @@ import ckeditor5TableDll from "@ckeditor/ckeditor5-table/build/table.js";
 import ckeditor5WordCountDll from "@ckeditor/ckeditor5-word-count/build/word-count.js";
 import ckeditor5MaximumLengthDll from "@reinmar/ckeditor5-maximum-length/build/maximum-length.js";
 import { StrapiMediaLib } from "./plugins/StrapiMediaLib";
-// prettier-ignore-end
 
 const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
   light: {
     plugins: [
       window.CKEditor5.autoformat.Autoformat,
-      window.CKEditor5.blockQuote.BlockQuote,
       window.CKEditor5.basicStyles.Bold,
       window.CKEditor5.basicStyles.Italic,
       window.CKEditor5.essentials.Essentials,
@@ -61,7 +56,7 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
       '|',
       'heading',
       '|',
-      'blockquote', 'bold', 'italic',
+      'bold', 'italic',
       '|',
       'link', 'strapiMediaLib', 'insertTable',
       '|',
@@ -70,8 +65,10 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
     heading: {
       options: [
         { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
-        { model: 'heading5', view: 'h5', title: 'Heading 5', class: 'ck-heading_heading5' },
-        { model: 'heading6', view: 'h6', title: 'Heading 6', class: 'ck-heading_heading6' },
+        { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+        { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' },
+        { model: 'heading3', view: 'h3', title: 'Heading 3', class: 'ck-heading_heading3' },
+        { model: 'heading4', view: 'h4', title: 'Heading 4', class: 'ck-heading_heading4' },
       ]
     },
     image: {
@@ -233,7 +230,7 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
         '|',
         'alignment',
         '|',
-        'bulletedList', 'numberedList', 'todoList', 'outdent', 'indent',
+        'bulletedList', 'numberedList', 'todoList', 'outdent', 'indent', 
       ],
       shouldNotGroupWhenFull: true
     },
