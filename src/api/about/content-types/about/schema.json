@@ -23,6 +23,14 @@
     "body": {
       "type": "richtext",
       "required": true
+    },
+    "aNew": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

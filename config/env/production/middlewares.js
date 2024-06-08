@@ -6,12 +6,10 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "script-src": ["'self'", "*.tinymce.com", "*.tiny.cloud", "https:"],
-          "connect-src": ["'self'", "*.tinymce.com", "*.tiny.cloud", "blob:"],
+          "script-src": ["'self'", "https:"],
+          "connect-src": ["'self'", "blob:"],
           "img-src": [
             "'self'",
-            "*.tinymce.com",
-            "*.tiny.cloud",
             "data:",
             "blob:",
             "cdn.jsdelivr.net",
@@ -22,11 +20,9 @@ module.exports = [
           "style-src": [
             "'self'",
             "'unsafe-inline'",
-            "*.tinymce.com",
-						"*.tiny.cloud",
 						"*aphroconfuso.mt",
           ],
-          "font-src": ["'self'", "*.tinymce.com", "*.tiny.cloud", "*aphroconfuso.mt"],
+          "font-src": ["'self'", "*aphroconfuso.mt"],
         },
         upgradeInsecureRequests: null,
       },

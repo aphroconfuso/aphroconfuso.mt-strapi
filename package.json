@@ -10,7 +10,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@sklinet/strapi-plugin-tinymce": "^1.0.4",
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.11",
     "@strapi/plugin-graphql": "^4.11.0",
     "@strapi/plugin-i18n": "4.11.0",
     "@strapi/plugin-users-permissions": "4.11.0",
