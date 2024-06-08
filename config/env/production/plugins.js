@@ -50,6 +50,10 @@ module.exports = ({env}) => ({
 			branch: 'main',
 		},
 	},
+  ckeditor: {
+    enabled: true,
+    resolve: "./src/plugins/strapi-plugin-ckeditor"
+  },
 	// tinymce: {
 	// 		enabled: true,
 	// 		config: {
