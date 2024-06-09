@@ -9,8 +9,15 @@ export const style = css`
     font-size: 0.875rem;
   }
 
+	@font-face {
+		font-family: "Alegreya";
+		src: url("https://aphroconfuso.mt/fonts/Alegreya-Regular.ttf") format("truetype");
+		font-style: normal;
+		font-weight: 400;
+	}
+
   .ck-editor__main {
-    --ck-font-face: "Source Sans Pro", system-ui, Roboto, "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    --ck-font-face: "Alegreya", serif;
     color: var(--ck-color-editor-base-text);
     font-family: var(--ck-font-face);
 

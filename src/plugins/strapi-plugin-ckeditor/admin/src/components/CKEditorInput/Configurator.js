@@ -33,46 +33,152 @@ import { StrapiMediaLib } from "./plugins/StrapiMediaLib";
 const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
   light: {
     plugins: [
-      window.CKEditor5.autoformat.Autoformat,
-      window.CKEditor5.blockQuote.BlockQuote,
       window.CKEditor5.basicStyles.Bold,
       window.CKEditor5.basicStyles.Italic,
+      window.CKEditor5.blockQuote.BlockQuote,
       window.CKEditor5.essentials.Essentials,
       window.CKEditor5.heading.Heading,
+      window.CKEditor5.highlight.Highlight,
+      window.CKEditor5.htmlEmbed.HtmlEmbed,
       window.CKEditor5.image.Image,
       window.CKEditor5.image.ImageCaption,
       window.CKEditor5.image.ImageStyle,
       window.CKEditor5.image.ImageToolbar,
       window.CKEditor5.image.ImageUpload,
-      window.CKEditor5.indent.Indent,
       window.CKEditor5.link.Link,
       window.CKEditor5.list.List,
       window.CKEditor5.paragraph.Paragraph,
       window.CKEditor5.pasteFromOffice.PasteFromOffice,
       window.CKEditor5.table.Table,
-      window.CKEditor5.table.TableToolbar,
-      window.CKEditor5.table.TableColumnResize,
       window.CKEditor5.table.TableCaption,
+      window.CKEditor5.table.TableColumnResize,
+      window.CKEditor5.table.TableToolbar,
       window.CKEditor5.wordCount.WordCount,
-      StrapiMediaLib
+      StrapiMediaLib,
     ],
     toolbar: [
-      'undo', 'redo',
-      '|',
       'heading',
       '|',
-      'blockquote', 'bold', 'italic',
+      'blockquote',
       '|',
-      'link', 'strapiMediaLib', 'insertTable',
+      'highlight',
+			'|',
+			'link', 'bold', 'italic',
       '|',
-      'bulletedList', 'numberedList'
+      'bulletedList', 'numberedList', 'insertTable',
+      '|',
+      'strapiMediaLib', 'htmlEmbed',
     ],
     heading: {
       options: [
         { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+        { model: 'blockquote', view: 'blockquote', title: 'Blockquote', class: 'ck-heading_blockquote' },
         { model: 'heading5', view: 'h5', title: 'Heading 5', class: 'ck-heading_heading5' },
         { model: 'heading6', view: 'h6', title: 'Heading 6', class: 'ck-heading_heading6' },
-      ]
+				{
+					model: 'paragraphEnjambed',
+					view: {
+						name: 'p',
+						classes: 'enjambed'
+					},
+					title: 'Paragraph - enjambed',
+					class: 'ck-heading_paragraph_enjambed',
+					// It needs to be converted before the standard 'heading2'.
+					converterPriority: 'high'
+				},
+				{
+					model: 'blockquoteEnjambed',
+					view: {
+						name: 'blockquote',
+						classes: 'enjambed'
+					},
+					title: 'Blockquote - enjambed',
+					class: 'ck-heading_blockquote_enjambed',
+					converterPriority: 'high'
+				},
+				{
+					model: 'paragraphFx1',
+					view: {
+						name: 'p',
+						classes: 'fx1'
+					},
+					title: 'Paragraph - fx1',
+					class: 'ck-heading_paragraph_fx1',
+					converterPriority: 'high'
+				},
+				{
+					model: 'paragraphFx2',
+					view: {
+						name: 'p',
+						classes: 'fx2'
+					},
+					title: 'Paragraph - fx2',
+					class: 'ck-heading_paragraph_fx2',
+					converterPriority: 'high'
+				},
+				{
+					model: 'paragraphFx3',
+					view: {
+						name: 'p',
+						classes: 'fx3'
+					},
+					title: 'Paragraph - fx3',
+					class: 'ck-heading_paragraph_fx3',
+					converterPriority: 'high'
+				},
+				{
+					model: 'paragraphRtl',
+					view: {
+						name: 'p',
+						classes: 'rtl'
+					},
+					title: 'Paragraph - RTL',
+					class: 'ck-heading_paragraph_enjambed',
+					converterPriority: 'high'
+				},
+				{
+					model: 'paragraphLtr',
+					view: {
+						name: 'p',
+						classes: 'ltr'
+					},
+					title: 'Paragraph - LTR',
+					class: 'ck-heading_paragraph_ltr',
+					converterPriority: 'high'
+				},
+			],
+		},
+		highlight: {
+			options: [
+				{
+					model: 'yellowMarker',
+					class: 'fx1',
+					title: 'Span - fx1',
+					color: 'var(--ck-highlight-marker-yellow)',
+					type: 'marker'
+				},
+				{
+					model: 'greenMarker',
+					class: 'fx2',
+					title: 'Span - fx2',
+					color: 'var(--ck-highlight-marker-green)',
+					type: 'marker'
+				},
+				{
+					model: 'redMarker',
+					class: 'fx3',
+					title: 'Span - fx3',
+					color: 'var(--ck-highlight-marker-red)',
+					type: 'marker'
+				},
+				{
+					model: 'pinkMarker',
+					class: 'sc',
+					title: 'Span - small caps',
+					color: 'var(--ck-highlight-marker-pink)',
+					type: 'marker'
+				}
+			]
     },
     image: {
       toolbar: [
@@ -130,7 +236,7 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
         '|',
         'bold', 'italic',
         '|',
-        'link', 'strapiMediaLib', 'mediaEmbed', 'blockQuote', 'insertTable', 'codeBlock',
+        'link', 'strapiMediaLib', 'blockQuote', 'insertTable', 'codeBlock',
         '|',
         'bulletedList', 'numberedList', 'outdent', 'indent'
     ],

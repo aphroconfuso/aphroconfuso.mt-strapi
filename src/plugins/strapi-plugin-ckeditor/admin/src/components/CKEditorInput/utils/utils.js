@@ -7,8 +7,8 @@ export default function sanitize( data ) {
   const characters = {
     '<': '&lt;',
     '>': '&gt;',
-    '"': '&quot;',
-    "'": '&apos;'
+		'\n\n': '\n',
+		'aaa': 'bbb',
   }
 
   for ( const char in characters ) {
