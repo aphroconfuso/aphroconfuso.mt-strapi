@@ -13,6 +13,7 @@ import ckeditor5FontDll from "@ckeditor/ckeditor5-font/build/font.js";
 import ckeditor5HeadingDll from "@ckeditor/ckeditor5-heading/build/heading.js";
 import ckeditor5HighlightDll from '@ckeditor/ckeditor5-highlight/build/highlight.js';
 import ckeditor5HtmlEmbedDll from "@ckeditor/ckeditor5-html-embed/build/html-embed.js";
+import ckeditor5SourceEditingDll from "@ckeditor/ckeditor5-source-editing/build/source-editing.js";
 import ckeditor5HorizontalLineDll from "@ckeditor/ckeditor5-horizontal-line/build/horizontal-line.js";
 import ckeditor5MarkdownDll from '@ckeditor/ckeditor5-markdown-gfm/build/markdown-gfm';
 import ckeditor5MediaEmbedDll from "@ckeditor/ckeditor5-media-embed/build/media-embed.js";
@@ -49,6 +50,7 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
       window.CKEditor5.list.List,
       window.CKEditor5.paragraph.Paragraph,
       window.CKEditor5.pasteFromOffice.PasteFromOffice,
+      window.CKEditor5.sourceEditing.SourceEditing,
       window.CKEditor5.table.Table,
       window.CKEditor5.table.TableCaption,
       window.CKEditor5.table.TableColumnResize,
@@ -57,9 +59,7 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
       StrapiMediaLib,
     ],
     toolbar: [
-      'heading',
-      '|',
-      'blockquote',
+			'heading',
       '|',
       'highlight',
 			'|',
@@ -67,9 +67,9 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
       '|',
       'bulletedList', 'numberedList', 'insertTable',
       '|',
-      'strapiMediaLib', 'htmlEmbed',
+      'strapiMediaLib', 'sourceEditing',
     ],
-    heading: {
+		heading: {
       options: [
         { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
         { model: 'blockquote', view: 'blockquote', title: 'Blockquote', class: 'ck-heading_blockquote' },
@@ -154,28 +154,28 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
 					model: 'yellowMarker',
 					class: 'fx1',
 					title: 'Span - fx1',
-					color: 'var(--ck-highlight-marker-yellow)',
+					color: 'GOLD',
 					type: 'marker'
 				},
 				{
 					model: 'greenMarker',
 					class: 'fx2',
 					title: 'Span - fx2',
-					color: 'var(--ck-highlight-marker-green)',
+					color: 'lightgreen',
 					type: 'marker'
 				},
 				{
 					model: 'redMarker',
 					class: 'fx3',
 					title: 'Span - fx3',
-					color: 'var(--ck-highlight-marker-red)',
+					color: 'mediumvioletred',
 					type: 'marker'
 				},
 				{
 					model: 'pinkMarker',
 					class: 'sc',
 					title: 'Span - small caps',
-					color: 'var(--ck-highlight-marker-pink)',
+					color: 'orange',
 					type: 'marker'
 				}
 			]

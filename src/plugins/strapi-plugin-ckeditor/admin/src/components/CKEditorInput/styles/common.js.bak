@@ -10,81 +10,52 @@ export const style = css`
   }
 
 	@font-face {
-		font-family: "Alegreya", serif;
-		src: url("https://aphroconfuso.mt/fonts/Alegreya-VariableFont_wght.ttf") format("truetype");
+		font-family: "Alegreya";
+		src: url("https://aphroconfuso.mt/fonts/Alegreya-Regular.ttf") format("truetype");
 		font-style: normal;
 		font-weight: 400;
 	}
 
-  .ck.ck-content.ck-editor__editable {
-    --ck-font-face: "Alegreya";
-		border-bottom-left-radius: 0.25rem;
-		border-bottom-right-radius: 0.25rem;
-		line-height: initial;
-		min-height: 6rem;
+  .ck-editor__main {
+    --ck-font-face: "Alegreya", serif;
     color: var(--ck-color-editor-base-text);
     font-family: var(--ck-font-face);
 
-		i {
-			font-style: italic;
-		}
+    * {
+      font: revert;
+      margin: revert;
+    }
 
-		p {
-			font-size: 1.2rem;
-			line-height: 1.4;
-			margin-bottom: 0.9rem;
-		}
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.6em;
+      font-weight: 400;
+    }
 
-		blockquote {
-			font-size: 1.1rem;
-			font-style: normal;
-			line-height: 1.4;
-			margin: 0.9rem 0;
-			padding-left: 0.9rem;
-			border: none;
-		}
+    h2 {
+      font-size: 1.68em;
+      margin-bottom: 0.4em;
+      font-weight: 400;
+    }
 
-		h5 {
-			font-size: 1.4rem;
-			font-style: italic;
-			font-weight: 600;
-			margin-bottom: 0;
-			margin-top: .9rem;
-		}
+    h3 {
+      font-size: 1.36em;
+      margin-bottom: 0.2em;
+      font-weight: 400;
+    }
 
-		h6 {
-			font-size: 1.2rem;
-			font-weight: 700;
-			margin-bottom: 0;
-			margin-top: .9rem;
-		}
+    h4 {
+      font-size: 1.15em;
+      margin-bottom: 0.1em;
+      font-weight: 400;
+    }
 
-		.enjambed {
-			background-color: palegoldenrod !important;
-			margin-bottom: 0;
-		}
+    p {
+      font-size: 1em;
+      line-height: 1.6em;
+      margin-bottom: 0.8em;
+    }
 
-		.fx1 {
-			background-color: gold !important;
-		}
-		.fx2 {
-			background-color: lightgreen !important;
-		}
-		.fx3 {
-			background-color: mediumvioletred !important;
-		}
-		.ltr {
-			background-color: cornflowerblue !important;
-		}
-		.rtl {
-			background-color: palevioletred !important;
-		}
-		.sc {
-			font-variant: small-caps;
-			background-color: orange !important;
-		}
-
-		// unchanged
     figcaption {
       background-color: var(--ck-color-image-caption-background);
       caption-side: bottom;
@@ -94,6 +65,9 @@ export const style = css`
       outline-offset: -1px;
       padding: 0.6em;
       word-break: break-word;
+    }
+
+    blockquote {
     }
 
     .table {
@@ -125,6 +99,13 @@ export const style = css`
     sup {
       vertical-align: super
     }
+
+    // higher specificity needed
+    .ck.ck-content.ck-editor__editable {
+      line-height: initial;
+      min-height: 12.5rem;
+      border-bottom-left-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
 
       // so it's more Strapi alike
       &.ck-focused:not(.ck-editor__nested-editable) {
