@@ -16,7 +16,12 @@ export const style = css`
 		font-weight: 400;
 	}
 
-  .ck.ck-content.ck-editor__editable {
+	.ck-source-editing-area textarea {
+		color: palegreen !important;
+		background-color: darkbrown !important;
+	}
+
+	.ck.ck-content.ck-editor__editable {
     --ck-font-face: "Alegreya";
 		border-bottom-left-radius: 0.25rem;
 		border-bottom-right-radius: 0.25rem;
