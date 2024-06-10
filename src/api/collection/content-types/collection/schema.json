@@ -68,6 +68,13 @@
     },
     "continuity": {
       "type": "text"
+    },
+    "sortStories": {
+      "type": "enumeration",
+      "enum": [
+        "Data",
+        "Titlu"
+      ]
     }
   }
 }
