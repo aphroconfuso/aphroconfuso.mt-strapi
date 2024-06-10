@@ -88,8 +88,19 @@ const CKEditorInput = ({
             setEditorInstance( editor );
           }}
           onChange={ ( event, editor ) => {
-            const data = editor.getData();
-            onChange( { target: { name, value: data } } );
+            let data = editor.getData();
+						// Aphroconfuso fixes ***********************************************************************
+						data = data.replaceAll(/\n\n+/g,'\n');
+						data = data.replaceAll('<p>&nbsp;</p>','');
+						data = data.replaceAll('&nbsp;',' ');
+
+						// TEMP ***********************************************************************************
+						data = data.replaceAll('<i class','<marker class');
+						data = data.replaceAll('</i>','</marker>');
+						data = data.replaceAll('<em>','<i>');
+						data = data.replaceAll('</em>','</i>');
+
+						onChange( { target: { name, value: data } } );
 
             const wordCountPlugin = editor.plugins.get( 'WordCount' );
             const numberOfCharacters = wordCountPlugin.characters;
