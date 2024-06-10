@@ -94,12 +94,6 @@ const CKEditorInput = ({
 						data = data.replaceAll('<p>&nbsp;</p>','');
 						data = data.replaceAll('&nbsp;',' ');
 
-						// TEMP ***********************************************************************************
-						data = data.replaceAll('<i class','<marker class');
-						data = data.replaceAll('</i>','</marker>');
-						data = data.replaceAll('<em>','<i>');
-						data = data.replaceAll('</em>','</i>');
-
 						onChange( { target: { name, value: data } } );
 
             const wordCountPlugin = editor.plugins.get( 'WordCount' );
