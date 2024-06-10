@@ -17,11 +17,21 @@
   },
   "attributes": {
     "body": {
-      "type": "richtext",
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor",
       "required": true
     },
     "introduction": {
-      "type": "richtext",
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor",
       "required": false
     },
     "title": {
@@ -46,7 +56,12 @@
       "unique": true
     },
     "podcastNote": {
-      "type": "richtext"
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     },
     "letters": {
       "type": "relation",
@@ -85,7 +100,12 @@
       "inversedBy": "storiesRead"
     },
     "endnote": {
-      "type": "richtext"
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     },
     "endPromos": {
       "type": "component",
@@ -163,10 +183,20 @@
       "default": 0
     },
     "coda": {
-      "type": "richtext"
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     },
     "postscript": {
-      "type": "richtext"
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     },
     "epigraphs": {
       "type": "component",
@@ -186,7 +216,12 @@
       "required": true
     },
     "publicationHistory": {
-      "type": "richtext",
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor",
       "required": true
     },
     "promoImageMobile": {
@@ -236,7 +271,12 @@
       "default": true
     },
     "triggerWarning": {
-      "type": "richtext"
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     },
     "imageBorderColour": {
       "pluginOptions": {

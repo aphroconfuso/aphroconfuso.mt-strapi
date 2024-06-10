@@ -21,7 +21,12 @@
       "required": true
     },
     "editorial": {
-      "type": "richtext",
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor",
       "required": true
     },
     "dateTimePublication": {
@@ -34,7 +39,12 @@
       "target": "api::story.story"
     },
     "moreToCome": {
-      "type": "richtext"
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "generic",
     "pluralName": "generics",
-    "displayName": "Generic"
+    "displayName": "Generic",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,8 +14,8 @@
   "attributes": {
     "key": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": false,
+      "unique": false
     },
     "body": {
       "type": "customField",
@@ -22,7 +23,8 @@
         "output": "HTML",
         "preset": "light"
       },
-      "customField": "plugin::ckeditor.CKEditor"
+      "customField": "plugin::ckeditor.CKEditor",
+      "required": true
     },
     "title": {
       "type": "string",

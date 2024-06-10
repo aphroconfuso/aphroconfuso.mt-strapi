@@ -22,7 +22,12 @@
       "unique": true
     },
     "definition": {
-      "type": "richtext",
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor",
       "required": true
     },
     "Public": {
