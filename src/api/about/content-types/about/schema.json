@@ -28,22 +28,6 @@
       },
       "customField": "plugin::ckeditor.CKEditor",
       "required": true
-    },
-    "aNew": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "rich"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
-    },
-    "aNew2": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

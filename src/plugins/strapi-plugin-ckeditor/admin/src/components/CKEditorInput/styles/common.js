@@ -17,8 +17,8 @@ export const style = css`
 	}
 
 	.ck-source-editing-area textarea {
-		color: palegreen !important;
-		background-color: darkbrown !important;
+		color: orange !important;
+		background-color: darkslategray !important;
 	}
 
 	.ck.ck-content.ck-editor__editable {
