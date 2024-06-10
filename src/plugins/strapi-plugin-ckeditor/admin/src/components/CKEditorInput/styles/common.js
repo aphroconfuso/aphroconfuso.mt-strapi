@@ -86,6 +86,7 @@ export const style = css`
 		}
 		.sc {
 			font-variant: small-caps;
+		  text-transform: lowercase;
 			background-color: orange !important;
 		}
 

@@ -34,7 +34,8 @@ import { StrapiMediaLib } from "./plugins/StrapiMediaLib";
 const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
   light: {
     plugins: [
-      window.CKEditor5.basicStyles.Bold,
+			window.CKEditor5.alignment.Alignment,
+			window.CKEditor5.basicStyles.Bold,
       window.CKEditor5.basicStyles.Italic,
       window.CKEditor5.blockQuote.BlockQuote,
       window.CKEditor5.essentials.Essentials,
@@ -66,7 +67,9 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
 			'link', 'bold', 'italic',
       '|',
       'bulletedList', 'numberedList', 'insertTable',
-      '|',
+			'|',
+			'alignment',
+			'|',
       'strapiMediaLib', 'sourceEditing',
     ],
 		heading: {

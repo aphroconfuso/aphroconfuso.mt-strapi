@@ -9,7 +9,9 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-	"workspaces": ["./src/plugins/strapi-plugin-ckeditor"],
+  "workspaces": [
+    "./src/plugins/strapi-plugin-ckeditor"
+  ],
   "dependencies": {
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.11",
     "@strapi/plugin-graphql": "^4.11.0",
