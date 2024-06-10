@@ -34,6 +34,10 @@ export const style = css`
 			font-style: italic;
 		}
 
+		strong {
+			font-weight: 500;
+		}
+
 		p {
 			font-size: 1.2rem;
 			line-height: 1.4;
