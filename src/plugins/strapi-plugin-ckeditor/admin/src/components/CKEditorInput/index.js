@@ -90,10 +90,11 @@ const CKEditorInput = ({
           onChange={ ( event, editor ) => {
             let data = editor.getData();
 						// Aphroconfuso fixes ***********************************************************************
-						data = data.replaceAll(/\n\n+/g,'\n');
-						data = data.replaceAll('<p>&nbsp;</p>','');
-						data = data.replaceAll('&nbsp;',' ');
-
+						if (data.includes('###')) {
+							data = data.replaceAll(/\n\n+/g,'\n');
+							data = data.replaceAll('<p>&nbsp;</p>','');
+							data = data.replaceAll('&nbsp;',' ');
+						}
 						onChange( { target: { name, value: data } } );
 
             const wordCountPlugin = editor.plugins.get( 'WordCount' );

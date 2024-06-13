@@ -93,6 +93,9 @@ export const style = css`
 		  text-transform: lowercase;
 			background-color: orange !important;
 		}
+		[style^=text-align] {
+			background-color: lightcoral !important;
+		}
 
 		// unchanged
     figcaption {
