@@ -14,17 +14,20 @@
   ],
   "dependencies": {
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.11",
-    "@strapi/plugin-graphql": "^4.12.5",
-    "@strapi/plugin-i18n": "4.12.5",
-    "@strapi/plugin-users-permissions": "4.12.5",
-    "@strapi/strapi": "4.12.5",
+    "@strapi/plugin-graphql": "^4.25.17",
+    "@strapi/plugin-i18n": "4.25.17",
+    "@strapi/plugin-users-permissions": "4.25.17",
+    "@strapi/strapi": "4.25.17",
     "better-sqlite3": "8.0.1",
     "codemirror": "5.65.11",
     "pg": "^8.10.0",
-    "strapi-plugin-duplicate-button": "^1.1.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^5.3.4",
     "strapi-plugin-preview-button": "^1.1.2",
     "strapi-plugin-responsive-image": "^1.2.0",
-    "strapi-plugin-update-static-content": "^1.0.8"
+    "strapi-plugin-update-static-content": "^1.0.8",
+    "styled-components": "^5.3.11"
   },
   "contributors": [
     "Joe Gatt",
@@ -34,7 +37,7 @@
     "uuid": "6c792829-21cc-45e9-bf13-07e8265cc3de"
   },
   "engines": {
-    "node": ">=14.19.1 <=16.x.x",
+    "node": ">=18.17.1 <=18.17.1",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
