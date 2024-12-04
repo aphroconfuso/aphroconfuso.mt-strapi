@@ -1938,6 +1938,7 @@ export interface ApiStoryStory extends Schema.CollectionType {
       [
         'Djarju',
         'Esej',
+        'Ktieb stampat',
         'Memoir',
         'Poddata',
         'Poe\u017Cija',
