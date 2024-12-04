@@ -1,7 +1,4 @@
 module.exports = ({env}) => ({
-	'duplicate-button': {
-		enabled: true,
-	},
 	graphql: {
 		enabled: true,
     config: {
