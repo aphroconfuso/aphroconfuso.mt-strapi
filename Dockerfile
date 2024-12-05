@@ -6,8 +6,8 @@ ENV NODE_ENV=production
 WORKDIR /opt/
 COPY ./package.json ./package-lock.json ./
 ENV PATH /opt/node_modules/.bin:$PATH
-RUN npm i --omit=dev --verbose
 RUN npm install -g npm@10.9.2
+RUN npm i --omit=dev --verbose
 WORKDIR /opt/app
 COPY ./ .
 RUN npm run build
