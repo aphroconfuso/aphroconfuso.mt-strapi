@@ -1,4 +1,3 @@
-
 FROM node:18.17.1-alpine as build
 # Installing libvips-dev for sharp Compatability
 # RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev vips-dev > /dev/null 2>&1
@@ -6,7 +5,7 @@ ENV NODE_ENV=production
 WORKDIR /opt/
 COPY ./package.json ./package-lock.json ./
 ENV PATH /opt/node_modules/.bin:$PATH
-RUN npm install -g npm@10.9.2
+RUN npm install -g npm@10.9.2 --verbose
 RUN npm i --omit=dev --verbose
 WORKDIR /opt/app
 COPY ./ .
