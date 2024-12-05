@@ -23,7 +23,7 @@ module.exports = [
             "'unsafe-inline'",
 						"aphroconfuso.mt",
           ],
-          "font-src": ["'self'", "aphroconfuso.mt"],
+          "font-src": ["'self'", "aphroconfuso.mt", "data:"],
         },
         upgradeInsecureRequests: null,
       },
