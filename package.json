@@ -27,8 +27,8 @@
     "strapi-plugin-preview-button": "^1.1.2",
     "strapi-plugin-responsive-image": "^1.2.0",
     "strapi-plugin-update-static-content": "^1.0.8",
-    "styled-components": "^5.3.11"
-  },
+    "styled-components": "^5.3.3"
+	},
   "contributors": [
     "Joe Gatt",
     "Loranne Vella"
