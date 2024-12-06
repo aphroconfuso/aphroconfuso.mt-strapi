@@ -7,8 +7,8 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "script-src": ["'self'", "https:"],
-          "connect-src": ["'self'", "blob:"],
+          "script-src": ["'self'", "https:", 'https://cdn.ckeditor.com'],
+          "connect-src": ["'self'", "blob:", 'https://proxy-event.ckeditor.com'],
           "img-src": [
             "'self'",
             "data:",
