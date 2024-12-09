@@ -7,7 +7,7 @@ RUN npm install -g npm@10.9.2
 RUN npm ci --omit=dev --verbose
 WORKDIR /opt/app
 COPY ./ .
-RUN npm run build
+RUN npm run develop
 FROM node:18.20.5-alpine
 ENV NODE_ENV=production
 WORKDIR /opt/
