@@ -1,5 +1,5 @@
 FROM node:18.20.5-alpine as build
-ENV NODE_ENV=production
+# ENV NODE_ENV=production
 WORKDIR /opt/
 COPY ./package.json ./package-lock.json ./
 ENV PATH /opt/node_modules/.bin:$PATH
@@ -9,7 +9,7 @@ WORKDIR /opt/app
 COPY ./ .
 RUN npm run develop
 FROM node:18.20.5-alpine
-ENV NODE_ENV=production
+# ENV NODE_ENV=production
 WORKDIR /opt/
 COPY --from=build /opt/node_modules ./node_modules
 ENV PATH /opt/node_modules/.bin:$PATH
