@@ -6,7 +6,6 @@ import ckeditor from "@ckeditor/strapi-plugin-ckeditor/strapi-admin";
 import graphql from "@strapi/plugin-graphql/strapi-admin";
 import i18N from "@strapi/plugin-i18n/strapi-admin";
 import usersPermissions from "@strapi/plugin-users-permissions/strapi-admin";
-import previewButton from "strapi-plugin-preview-button/strapi-admin";
 import responsiveImage from "strapi-plugin-responsive-image/strapi-admin";
 import updateStaticContent from "strapi-plugin-update-static-content/strapi-admin";
 import { renderAdmin } from "@strapi/strapi/admin";
@@ -17,7 +16,6 @@ renderAdmin(document.getElementById("strapi"), {
     graphql: graphql,
     i18n: i18N,
     "users-permissions": usersPermissions,
-    "preview-button": previewButton,
     "responsive-image": responsiveImage,
     "update-static-content": updateStaticContent,
   },
