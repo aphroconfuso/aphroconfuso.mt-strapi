@@ -8,7 +8,7 @@ module.exports = [
         useDefaults: true,
         directives: {
           "script-src": ["'self'", "https:", 'https://cdn.ckeditor.com'],
-          "connect-src": ["'self'", "blob:", 'https://proxy-event.ckeditor.com'],
+          "connect-src": ["'self'", "https:", "blob:", 'https://proxy-event.ckeditor.com'],
           "img-src": [
             "'self'",
             "data:",
@@ -16,14 +16,16 @@ module.exports = [
             "cdn.jsdelivr.net",
             "strapi.io",
 						"s3.amazonaws.com",
-						"*aphroconfuso.mt",
+						"cms.aphroconfuso.mt",
+						"aphroconfuso.mt",
           ],
           "style-src": [
             "'self'",
             "'unsafe-inline'",
-						"*aphroconfuso.mt",
+						"cms.aphroconfuso.mt",
+						"aphroconfuso.mt",
           ],
-          "font-src": ["'self'", "*aphroconfuso.mt", "data:"],
+          "font-src": ["'self'", "cms.aphroconfuso.mt", "aphroconfuso.mt", "data:"],
         },
         upgradeInsecureRequests: null,
       },
