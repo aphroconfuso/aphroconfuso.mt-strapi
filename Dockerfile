@@ -1,4 +1,4 @@
-FROM node:16.13.0-alpine as build
+FROM node:18.20.5-alpine as build
 ENV NODE_ENV=production
 WORKDIR /opt/
 COPY ./package.json ./package-lock.json ./
@@ -8,7 +8,7 @@ RUN npm ci --omit=dev --verbose
 WORKDIR /opt/app
 COPY ./ .
 RUN npm run build
-FROM node:16.13.0-alpine
+FROM node:18.20.5-alpine
 ENV NODE_ENV=production
 WORKDIR /opt/
 COPY --from=build /opt/node_modules ./node_modules
