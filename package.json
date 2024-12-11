@@ -21,12 +21,8 @@
     "better-sqlite3": "8.0.1",
     "codemirror": "5.65.11",
     "pg": "^8.10.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^5.3.4",
     "strapi-plugin-responsive-image": "^1.2.0",
-    "strapi-plugin-update-static-content": "^1.0.8",
-    "styled-components": "^5.3.11"
+    "strapi-plugin-update-static-content": "^1.0.8"
   },
   "contributors": [
     "Joe Gatt",
