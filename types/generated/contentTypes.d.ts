@@ -2100,14 +2100,6 @@ export interface ApiVenueVenue extends Schema.CollectionType {
     >;
     name: Attribute.String & Attribute.Required;
     publishedAt: Attribute.DateTime;
-    testBody: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
     updatedAt: Attribute.DateTime;
     updatedBy: Attribute.Relation<
       'api::venue.venue',

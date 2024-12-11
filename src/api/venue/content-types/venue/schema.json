@@ -29,14 +29,6 @@
       "relation": "manyToMany",
       "target": "api::event.event",
       "mappedBy": "venues"
-    },
-    "testBody": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
