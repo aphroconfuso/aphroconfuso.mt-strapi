@@ -7,7 +7,7 @@
   "options": {},
   "attributes": {
     "quotation": {
-      "type": "richtext",
+      "type": "text",
       "required": true
     },
     "attribution": {
