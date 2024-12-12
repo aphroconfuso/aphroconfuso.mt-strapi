@@ -28,6 +28,9 @@
       },
       "customField": "plugin::ckeditor.CKEditor",
       "required": true
+    },
+    "bodyRichText": {
+      "type": "blocks"
     }
   }
 }

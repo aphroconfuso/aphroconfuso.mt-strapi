@@ -1259,6 +1259,7 @@ export interface ApiNewsletterPageNewsletterPage extends Schema.SingleType {
           preset: 'light';
         }
       >;
+    bodyRichText: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::newsletter-page.newsletter-page',
