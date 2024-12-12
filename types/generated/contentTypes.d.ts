@@ -379,15 +379,7 @@ export interface ApiAboutAbout extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::about.about',
@@ -424,15 +416,7 @@ export interface ApiAccessibilityAccessibility extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::accessibility.accessibility',
@@ -469,15 +453,7 @@ export interface ApiAppointmentIndexAppointmentIndex extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::appointment-index.appointment-index',
@@ -522,23 +498,8 @@ export interface ApiAppointmentAppointment extends Schema.CollectionType {
     > &
       Attribute.Private;
     dateTimePublication: Attribute.DateTime & Attribute.Required;
-    editorial: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
-    moreToCome: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    editorial: Attribute.Text & Attribute.Required;
+    moreToCome: Attribute.Text;
     publishedAt: Attribute.DateTime;
     stories: Attribute.Relation<
       'api::appointment.appointment',
@@ -657,15 +618,7 @@ export interface ApiBookmarkBookmark extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::bookmark.bookmark',
@@ -702,14 +655,7 @@ export interface ApiCollectionCollection extends Schema.CollectionType {
     };
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text;
     continuity: Attribute.Text;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -768,14 +714,7 @@ export interface ApiColophonColophon extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::colophon.colophon',
@@ -812,15 +751,7 @@ export interface ApiCookiePolicyCookiePolicy extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::cookie-policy.cookie-policy',
@@ -856,15 +787,7 @@ export interface ApiCopyrightCopyright extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::copyright.copyright',
@@ -948,15 +871,7 @@ export interface ApiGenericGeneric extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::generic.generic',
@@ -1091,15 +1006,7 @@ export interface ApiInternationalMediaInternationalMedia
     };
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::international-media.international-media',
@@ -1159,15 +1066,7 @@ export interface ApiLetterLetter extends Schema.CollectionType {
       'manyToMany',
       'api::person.person'
     >;
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::letter.letter',
@@ -1205,15 +1104,7 @@ export interface ApiLettersPageLettersPage extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::letters-page.letters-page',
@@ -1250,16 +1141,7 @@ export interface ApiNewsletterPageNewsletterPage extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
-    bodyRichText: Attribute.Blocks;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::newsletter-page.newsletter-page',
@@ -1339,14 +1221,7 @@ export interface ApiPersonPerson extends Schema.CollectionType {
   };
   attributes: {
     affiliation: Attribute.String;
-    bioNote: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    bioNote: Attribute.Text;
     booksAuthored: Attribute.Relation<
       'api::person.person',
       'manyToMany',
@@ -1441,15 +1316,7 @@ export interface ApiPodcastPagePodcastPage extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::podcast-page.podcast-page',
@@ -1486,15 +1353,7 @@ export interface ApiPrivacyPolicyPrivacyPolicy extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::privacy-policy.privacy-policy',
@@ -1531,15 +1390,8 @@ export interface ApiProcessProcess extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.RichText &
+    body: Attribute.Text &
       Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      > &
       Attribute.SetPluginOptions<{
         versions: {
           versioned: true;
@@ -1641,14 +1493,7 @@ export interface ApiSequenceSequence extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
-    description: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    description: Attribute.Text;
     moreToCome: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<true>;
@@ -1704,28 +1549,13 @@ export interface ApiStoryStory extends Schema.CollectionType {
       ]
     > &
       Attribute.DefaultTo<'solo: A'>;
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     booksMentioned: Attribute.Relation<
       'api::story.story',
       'manyToMany',
       'api::book.book'
     >;
-    coda: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    coda: Attribute.Text;
     collections: Attribute.Relation<
       'api::story.story',
       'manyToMany',
@@ -1756,14 +1586,7 @@ export interface ApiStoryStory extends Schema.CollectionType {
         };
       }> &
       Attribute.DefaultTo<false>;
-    endnote: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    endnote: Attribute.Text;
     endPromos: Attribute.Component<'promotions.story-promo', true> &
       Attribute.SetMinMax<
         {
@@ -1801,14 +1624,7 @@ export interface ApiStoryStory extends Schema.CollectionType {
       ]
     > &
       Attribute.DefaultTo<'Wisg\u0127a tat-test 16:9'>;
-    introduction: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    introduction: Attribute.Text;
     language: Attribute.Enumeration<
       [
         '\u0627\u0644\u0639\u0631\u0628\u064A\u0629',
@@ -1869,40 +1685,18 @@ export interface ApiStoryStory extends Schema.CollectionType {
           versioned: true;
         };
       }>;
-    podcastNote: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    podcastNote: Attribute.Text;
     podcastUrl: Attribute.String &
       Attribute.Unique &
       Attribute.SetMinMaxLength<{
         maxLength: 256;
         minLength: 11;
       }>;
-    postscript: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    postscript: Attribute.Text;
     prominentMentions: Attribute.Integer & Attribute.DefaultTo<0>;
     promoImage: Attribute.Media<'images'> & Attribute.Required;
     promoImageMobile: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    publicationHistory: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    publicationHistory: Attribute.Text & Attribute.Required;
     publishedAt: Attribute.DateTime;
     readers: Attribute.Relation<
       'api::story.story',
@@ -1927,14 +1721,7 @@ export interface ApiStoryStory extends Schema.CollectionType {
       'manyToMany',
       'api::person.person'
     >;
-    triggerWarning: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    triggerWarning: Attribute.Text;
     type: Attribute.Enumeration<
       [
         'Djarju',
@@ -2001,15 +1788,7 @@ export interface ApiStyleGuideEntryStyleGuideEntry
       'admin::user'
     > &
       Attribute.Private;
-    definition: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    definition: Attribute.Text & Attribute.Required;
     notWords: Attribute.String;
     Public: Attribute.Boolean & Attribute.DefaultTo<false>;
     publishedAt: Attribute.DateTime;
@@ -2041,15 +1820,7 @@ export interface ApiStyleGuideStyleGuide extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.RichText &
-      Attribute.Required &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::style-guide.style-guide',

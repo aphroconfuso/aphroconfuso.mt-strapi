@@ -21,12 +21,7 @@
       "required": true
     },
     "description": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+      "type": "text"
     },
     "stories": {
       "type": "relation",

@@ -17,21 +17,11 @@
   },
   "attributes": {
     "body": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor",
+      "type": "text",
       "required": true
     },
     "introduction": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor",
+      "type": "text",
       "required": false
     },
     "title": {
@@ -56,12 +46,7 @@
       "unique": true
     },
     "podcastNote": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+      "type": "text"
     },
     "letters": {
       "type": "relation",
@@ -100,12 +85,7 @@
       "inversedBy": "storiesRead"
     },
     "endnote": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+      "type": "text"
     },
     "endPromos": {
       "type": "component",
@@ -184,20 +164,10 @@
       "default": 0
     },
     "coda": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+      "type": "text"
     },
     "postscript": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+      "type": "text"
     },
     "epigraphs": {
       "type": "component",
@@ -217,12 +187,7 @@
       "required": true
     },
     "publicationHistory": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor",
+      "type": "text",
       "required": true
     },
     "promoImageMobile": {
@@ -272,12 +237,7 @@
       "default": true
     },
     "triggerWarning": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+      "type": "text"
     },
     "imageBorderColour": {
       "pluginOptions": {

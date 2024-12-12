@@ -31,12 +31,7 @@
       "default": true
     },
     "bioNote": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+      "type": "text"
     },
     "city": {
       "type": "string"
