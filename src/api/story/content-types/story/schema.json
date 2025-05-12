@@ -136,6 +136,7 @@
     "type": {
       "type": "enumeration",
       "enum": [
+        "Avveniment",
         "Djarju",
         "Esej",
         "Ktieb stampat",
@@ -333,6 +334,14 @@
     },
     "podcastDate": {
       "type": "date"
+    },
+    "publishedBook": {
+      "type": "boolean",
+      "default": false
+    },
+    "bookInShops": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

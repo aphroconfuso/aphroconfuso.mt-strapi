@@ -1141,7 +1141,15 @@ export interface ApiNewsletterPageNewsletterPage extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.Text & Attribute.Required;
+    body: Attribute.RichText & Attribute.Required;
+    body2: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      >;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::newsletter-page.newsletter-page',
@@ -1550,6 +1558,7 @@ export interface ApiStoryStory extends Schema.CollectionType {
     > &
       Attribute.DefaultTo<'solo: A'>;
     body: Attribute.Text & Attribute.Required;
+    bookInShops: Attribute.Boolean & Attribute.DefaultTo<false>;
     booksMentioned: Attribute.Relation<
       'api::story.story',
       'manyToMany',
@@ -1698,6 +1707,7 @@ export interface ApiStoryStory extends Schema.CollectionType {
     promoImageMobile: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     publicationHistory: Attribute.Text & Attribute.Required;
     publishedAt: Attribute.DateTime;
+    publishedBook: Attribute.Boolean & Attribute.DefaultTo<false>;
     readers: Attribute.Relation<
       'api::story.story',
       'manyToMany',
@@ -1724,6 +1734,7 @@ export interface ApiStoryStory extends Schema.CollectionType {
     triggerWarning: Attribute.Text;
     type: Attribute.Enumeration<
       [
+        'Avveniment',
         'Djarju',
         'Esej',
         'Ktieb stampat',

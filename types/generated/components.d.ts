@@ -121,7 +121,7 @@ export interface QuotesEpigraphs extends Schema.Component {
   };
   attributes: {
     attribution: Attribute.String;
-    quotation: Attribute.RichText & Attribute.Required;
+    quotation: Attribute.Text & Attribute.Required;
     top: Attribute.Boolean & Attribute.DefaultTo<true>;
   };
 }
