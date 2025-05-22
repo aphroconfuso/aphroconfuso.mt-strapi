@@ -335,7 +335,7 @@
     "podcastDate": {
       "type": "date"
     },
-    "publishedBook": {
+    "bookPublished": {
       "type": "boolean",
       "default": false
     },
