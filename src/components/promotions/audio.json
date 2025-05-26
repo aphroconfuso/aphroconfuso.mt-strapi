@@ -31,6 +31,9 @@
     },
     "audioLengthMinutes": {
       "type": "string"
+    },
+    "blurbLines": {
+      "type": "integer"
     }
   }
 }

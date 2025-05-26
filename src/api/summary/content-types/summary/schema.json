@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "summaries",
+  "info": {
+    "singularName": "summary",
+    "pluralName": "summaries",
+    "displayName": "Summary"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "text"
+    },
+    "originalStory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::story.story"
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "AR",
+        "CA",
+        "DE",
+        "EN",
+        "ES",
+        "FR",
+        "IT",
+        "MT",
+        "NL"
+      ],
+      "required": true
+    }
+  }
+}

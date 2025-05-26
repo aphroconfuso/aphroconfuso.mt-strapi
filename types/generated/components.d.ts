@@ -22,6 +22,7 @@ export interface PromotionsAudio extends Schema.Component {
   attributes: {
     audioLengthMinutes: Attribute.String;
     audioUrl: Attribute.String;
+    blurbLines: Attribute.Integer;
     highlight: Attribute.Boolean & Attribute.DefaultTo<false>;
     interfaceLabel: Attribute.String & Attribute.Required;
     note: Attribute.RichText;
@@ -41,6 +42,7 @@ export interface PromotionsStoryImagePromo extends Schema.Component {
     displayName: 'StoryImagePromo';
   };
   attributes: {
+    blurbLines: Attribute.Integer;
     image: Attribute.Media<'images', true>;
     imageCrop: Attribute.Enumeration<['landscape', 'square', 'uncropped']> &
       Attribute.DefaultTo<'landscape'>;
@@ -71,6 +73,7 @@ export interface PromotionsStoryPoemPromo extends Schema.Component {
     displayName: 'StoryPoemPromo';
   };
   attributes: {
+    blurbLines: Attribute.Integer;
     interfaceLabel: Attribute.String & Attribute.Required & Attribute.Private;
     mobilePriority: Attribute.Integer &
       Attribute.SetMinMax<
@@ -97,6 +100,7 @@ export interface PromotionsStoryPromo extends Schema.Component {
     displayName: 'StoryPromo';
   };
   attributes: {
+    blurbLines: Attribute.Integer;
     interfaceLabel: Attribute.String & Attribute.Required & Attribute.Private;
     letter: Attribute.Relation<
       'promotions.story-promo',
