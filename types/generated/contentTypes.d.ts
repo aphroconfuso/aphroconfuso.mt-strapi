@@ -1006,6 +1006,7 @@ export interface ApiInternationalMediaInternationalMedia
     };
   };
   attributes: {
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::international-media.international-media',
@@ -1852,46 +1853,6 @@ export interface ApiStyleGuideStyleGuide extends Schema.SingleType {
   };
 }
 
-export interface ApiSummarySummary extends Schema.CollectionType {
-  collectionName: 'summaries';
-  info: {
-    displayName: 'Summary';
-    pluralName: 'summaries';
-    singularName: 'summary';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    body: Attribute.Text;
-    createdAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::summary.summary',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    language: Attribute.Enumeration<
-      ['AR', 'CA', 'DE', 'EN', 'ES', 'FR', 'IT', 'MT', 'NL']
-    > &
-      Attribute.Required;
-    originalStory: Attribute.Relation<
-      'api::summary.summary',
-      'oneToOne',
-      'api::story.story'
-    >;
-    publishedAt: Attribute.DateTime;
-    title: Attribute.String;
-    updatedAt: Attribute.DateTime;
-    updatedBy: Attribute.Relation<
-      'api::summary.summary',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiVenueVenue extends Schema.CollectionType {
   collectionName: 'venues';
   info: {
@@ -2397,7 +2358,6 @@ declare module '@strapi/types' {
       'api::story.story': ApiStoryStory;
       'api::style-guide-entry.style-guide-entry': ApiStyleGuideEntryStyleGuideEntry;
       'api::style-guide.style-guide': ApiStyleGuideStyleGuide;
-      'api::summary.summary': ApiSummarySummary;
       'api::venue.venue': ApiVenueVenue;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
