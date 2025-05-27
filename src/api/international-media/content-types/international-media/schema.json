@@ -20,10 +20,6 @@
       "type": "string",
       "required": true
     },
-    "body": {
-      "type": "text",
-      "required": true
-    },
     "language": {
       "type": "enumeration",
       "enum": [
@@ -42,6 +38,12 @@
         "Română"
       ],
       "required": true
+    },
+    "Summaries": {
+      "displayName": "summaries",
+      "type": "component",
+      "repeatable": true,
+      "component": "summaries.summaries"
     }
   }
 }

@@ -1,5 +1,34 @@
 import type { Attribute, Schema } from '@strapi/strapi';
 
+export interface BookInfoBook extends Schema.Component {
+  collectionName: 'components_book_info_books';
+  info: {
+    description: '';
+    displayName: 'book';
+  };
+  attributes: {
+    inShops: Attribute.Boolean & Attribute.DefaultTo<false>;
+    isbn: Attribute.String;
+    pages: Attribute.Integer;
+    price: Attribute.Integer;
+  };
+}
+
+export interface BookPromoBookPromotion extends Schema.Component {
+  collectionName: 'components_book_promo_book_promotions';
+  info: {
+    displayName: 'Book promotion';
+  };
+  attributes: {
+    body: Attribute.Text;
+    stories: Attribute.Relation<
+      'book-promo.book-promotion',
+      'oneToMany',
+      'api::story.story'
+    >;
+  };
+}
+
 export interface DefinitionsStyleGuideItem extends Schema.Component {
   collectionName: 'components_definitions_style_guide_items';
   info: {
@@ -130,15 +159,35 @@ export interface QuotesEpigraphs extends Schema.Component {
   };
 }
 
+export interface SummariesSummaries extends Schema.Component {
+  collectionName: 'components_summaries_summaries';
+  info: {
+    displayName: 'summaries';
+  };
+  attributes: {
+    body: Attribute.Text;
+    download: Attribute.Media<'files', true>;
+    story: Attribute.Relation<
+      'summaries.summaries',
+      'oneToOne',
+      'api::story.story'
+    >;
+    title: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'book-info.book': BookInfoBook;
+      'book-promo.book-promotion': BookPromoBookPromotion;
       'definitions.style-guide-item': DefinitionsStyleGuideItem;
       'promotions.audio': PromotionsAudio;
       'promotions.story-image-promo': PromotionsStoryImagePromo;
       'promotions.story-poem-promo': PromotionsStoryPoemPromo;
       'promotions.story-promo': PromotionsStoryPromo;
       'quotes.epigraphs': QuotesEpigraphs;
+      'summaries.summaries': SummariesSummaries;
     }
   }
 }

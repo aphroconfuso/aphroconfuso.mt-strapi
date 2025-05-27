@@ -1006,7 +1006,6 @@ export interface ApiInternationalMediaInternationalMedia
     };
   };
   attributes: {
-    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::international-media.international-media',
@@ -1033,6 +1032,7 @@ export interface ApiInternationalMediaInternationalMedia
     > &
       Attribute.Required;
     publishedAt: Attribute.DateTime;
+    Summaries: Attribute.Component<'summaries.summaries', true>;
     title: Attribute.String & Attribute.Required;
     updatedAt: Attribute.DateTime;
     updatedBy: Attribute.Relation<
@@ -1489,6 +1489,7 @@ export interface ApiSequenceSequence extends Schema.CollectionType {
     };
   };
   attributes: {
+    books: Attribute.Component<'book-promo.book-promotion', true>;
     collections: Attribute.Relation<
       'api::sequence.sequence',
       'manyToMany',
@@ -1558,11 +1559,13 @@ export interface ApiStoryStory extends Schema.CollectionType {
     > &
       Attribute.DefaultTo<'solo: A'>;
     body: Attribute.Text & Attribute.Required;
+    book: Attribute.Component<'book-info.book'>;
     bookInShops: Attribute.Boolean & Attribute.DefaultTo<false>;
     bookIsbn: Attribute.String;
     bookOrderable: Attribute.Boolean & Attribute.DefaultTo<false>;
     bookPages: Attribute.Integer;
     bookPrice: Attribute.Integer;
+    bookPromo: Attribute.Component<'book-promo.book-promotion', true>;
     bookPublished: Attribute.Boolean & Attribute.DefaultTo<false>;
     booksMentioned: Attribute.Relation<
       'api::story.story',

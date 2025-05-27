@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_book_promo_book_promotions",
+  "info": {
+    "displayName": "Book promotion"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "text"
+    },
+    "stories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::story.story"
+    }
+  }
+}

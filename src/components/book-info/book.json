@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_book_info_books",
+  "info": {
+    "displayName": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "isbn": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "pages": {
+      "type": "integer"
+    },
+    "inShops": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

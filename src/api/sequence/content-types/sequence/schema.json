@@ -55,6 +55,11 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "books": {
+      "type": "component",
+      "repeatable": true,
+      "component": "book-promo.book-promotion"
     }
   }
 }

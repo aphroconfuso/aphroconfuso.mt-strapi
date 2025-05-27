@@ -363,6 +363,18 @@
     },
     "bookIsbn": {
       "type": "string"
+    },
+    "book": {
+      "displayName": "book",
+      "type": "component",
+      "repeatable": false,
+      "component": "book-info.book"
+    },
+    "bookPromo": {
+      "displayName": "Book promotion",
+      "type": "component",
+      "repeatable": true,
+      "component": "book-promo.book-promotion"
     }
   }
 }
