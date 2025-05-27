@@ -18,6 +18,14 @@
     "inShops": {
       "type": "boolean",
       "default": false
+    },
+    "published": {
+      "type": "boolean",
+      "default": false
+    },
+    "orderable": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

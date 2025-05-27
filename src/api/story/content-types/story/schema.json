@@ -335,35 +335,6 @@
     "podcastDate": {
       "type": "date"
     },
-    "bookPublished": {
-      "type": "boolean",
-      "default": false
-    },
-    "bookInShops": {
-      "type": "boolean",
-      "default": false
-    },
-    "bookPages": {
-      "type": "integer"
-    },
-    "bookPrice": {
-      "type": "integer"
-    },
-    "bookOrderable": {
-      "type": "boolean",
-      "default": false
-    },
-    "promoteBook": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::story.story"
-    },
-    "promoteBookText": {
-      "type": "text"
-    },
-    "bookIsbn": {
-      "type": "string"
-    },
     "book": {
       "displayName": "book",
       "type": "component",

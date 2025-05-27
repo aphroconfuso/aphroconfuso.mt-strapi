@@ -1560,13 +1560,7 @@ export interface ApiStoryStory extends Schema.CollectionType {
       Attribute.DefaultTo<'solo: A'>;
     body: Attribute.Text & Attribute.Required;
     book: Attribute.Component<'book-info.book'>;
-    bookInShops: Attribute.Boolean & Attribute.DefaultTo<false>;
-    bookIsbn: Attribute.String;
-    bookOrderable: Attribute.Boolean & Attribute.DefaultTo<false>;
-    bookPages: Attribute.Integer;
-    bookPrice: Attribute.Integer;
     bookPromo: Attribute.Component<'book-promo.book-promotion', true>;
-    bookPublished: Attribute.Boolean & Attribute.DefaultTo<false>;
     booksMentioned: Attribute.Relation<
       'api::story.story',
       'manyToMany',
@@ -1713,12 +1707,6 @@ export interface ApiStoryStory extends Schema.CollectionType {
     prominentMentions: Attribute.Integer & Attribute.DefaultTo<0>;
     promoImage: Attribute.Media<'images'> & Attribute.Required;
     promoImageMobile: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    promoteBook: Attribute.Relation<
-      'api::story.story',
-      'oneToOne',
-      'api::story.story'
-    >;
-    promoteBookText: Attribute.Text;
     publicationHistory: Attribute.Text & Attribute.Required;
     publishedAt: Attribute.DateTime;
     readers: Attribute.Relation<
