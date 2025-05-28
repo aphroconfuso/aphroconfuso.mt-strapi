@@ -341,7 +341,7 @@
       "repeatable": false,
       "component": "book-info.book"
     },
-    "booksPromo": {
+    "bookPromos": {
       "displayName": "Book promotion",
       "type": "component",
       "repeatable": true,
