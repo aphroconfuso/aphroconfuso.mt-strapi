@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "body": {
+    "text": {
       "type": "text"
     },
     "story": {

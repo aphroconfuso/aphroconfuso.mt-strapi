@@ -56,7 +56,7 @@
       "default": true,
       "required": true
     },
-    "books": {
+    "booksPromo": {
       "type": "component",
       "repeatable": true,
       "component": "book-promo.book-promotion"

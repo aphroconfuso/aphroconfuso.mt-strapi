@@ -23,12 +23,12 @@ export interface BookPromoBookPromotion extends Schema.Component {
     displayName: 'Book promotion';
   };
   attributes: {
-    body: Attribute.Text;
     story: Attribute.Relation<
       'book-promo.book-promotion',
       'oneToOne',
       'api::story.story'
     >;
+    text: Attribute.Text;
   };
 }
 

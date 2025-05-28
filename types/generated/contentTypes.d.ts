@@ -1490,7 +1490,7 @@ export interface ApiSequenceSequence extends Schema.CollectionType {
     };
   };
   attributes: {
-    books: Attribute.Component<'book-promo.book-promotion', true>;
+    booksPromo: Attribute.Component<'book-promo.book-promotion', true>;
     collections: Attribute.Relation<
       'api::sequence.sequence',
       'manyToMany',
@@ -1560,13 +1560,12 @@ export interface ApiStoryStory extends Schema.CollectionType {
     > &
       Attribute.DefaultTo<'solo: A'>;
     body: Attribute.Text & Attribute.Required;
-    book: Attribute.Component<'book-info.book'>;
-    bookPromo: Attribute.Component<'book-promo.book-promotion', true>;
     booksMentioned: Attribute.Relation<
       'api::story.story',
       'manyToMany',
       'api::book.book'
     >;
+    booksPromo: Attribute.Component<'book-promo.book-promotion', true>;
     coda: Attribute.Text;
     collections: Attribute.Relation<
       'api::story.story',
@@ -1637,6 +1636,7 @@ export interface ApiStoryStory extends Schema.CollectionType {
     > &
       Attribute.DefaultTo<'Wisg\u0127a tat-test 16:9'>;
     introduction: Attribute.Text;
+    isBook: Attribute.Component<'book-info.book'>;
     language: Attribute.Enumeration<
       [
         '\u0627\u0644\u0639\u0631\u0628\u064A\u0629',
