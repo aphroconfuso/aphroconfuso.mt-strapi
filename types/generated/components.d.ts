@@ -19,13 +19,14 @@ export interface BookInfoBook extends Schema.Component {
 export interface BookPromoBookPromotion extends Schema.Component {
   collectionName: 'components_book_promo_book_promotions';
   info: {
+    description: '';
     displayName: 'Book promotion';
   };
   attributes: {
     body: Attribute.Text;
-    stories: Attribute.Relation<
+    story: Attribute.Relation<
       'book-promo.book-promotion',
-      'oneToMany',
+      'oneToOne',
       'api::story.story'
     >;
   };
