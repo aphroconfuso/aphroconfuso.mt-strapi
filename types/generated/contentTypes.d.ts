@@ -1033,7 +1033,7 @@ export interface ApiInternationalMediaInternationalMedia
     > &
       Attribute.Required;
     publishedAt: Attribute.DateTime;
-    Summaries: Attribute.Component<'summaries.summaries', true>;
+    summaries: Attribute.Component<'summaries.summaries', true>;
     title: Attribute.String & Attribute.Required;
     updatedAt: Attribute.DateTime;
     updatedBy: Attribute.Relation<
