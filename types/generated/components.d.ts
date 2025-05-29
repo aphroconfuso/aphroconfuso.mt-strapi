@@ -9,6 +9,7 @@ export interface BookInfoBook extends Schema.Component {
   attributes: {
     inShops: Attribute.Boolean & Attribute.DefaultTo<false>;
     isbn: Attribute.String;
+    lokalUrl: Attribute.String;
     orderable: Attribute.Boolean & Attribute.DefaultTo<false>;
     pages: Attribute.Integer;
     price: Attribute.Integer;

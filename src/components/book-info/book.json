@@ -26,6 +26,9 @@
     "orderable": {
       "type": "boolean",
       "default": false
+    },
+    "lokalUrl": {
+      "type": "string"
     }
   }
 }
