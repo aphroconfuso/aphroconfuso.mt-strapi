@@ -1,14 +1,15 @@
 {
   "collectionName": "components_summaries_summaries",
   "info": {
-    "displayName": "summaries"
+    "displayName": "summaries",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "body": {
+    "text": {
       "type": "text"
     },
     "story": {
@@ -17,11 +18,12 @@
       "target": "api::story.story"
     },
     "download": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

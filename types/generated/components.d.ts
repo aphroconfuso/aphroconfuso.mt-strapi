@@ -166,16 +166,17 @@ export interface QuotesEpigraphs extends Schema.Component {
 export interface SummariesSummaries extends Schema.Component {
   collectionName: 'components_summaries_summaries';
   info: {
+    description: '';
     displayName: 'summaries';
   };
   attributes: {
-    body: Attribute.Text;
     download: Attribute.Media<'files', true>;
     story: Attribute.Relation<
       'summaries.summaries',
       'oneToOne',
       'api::story.story'
     >;
+    text: Attribute.Text;
     title: Attribute.String;
   };
 }
