@@ -970,6 +970,7 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
         number
       >;
     publishedAt: Attribute.DateTime;
+    showBooks: Attribute.Boolean & Attribute.DefaultTo<true>;
     showNewsletter: Attribute.Boolean & Attribute.DefaultTo<true>;
     showPodcastPromo: Attribute.Boolean &
       Attribute.SetPluginOptions<{

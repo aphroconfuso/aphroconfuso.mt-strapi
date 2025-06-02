@@ -17,7 +17,7 @@
       "relation": "oneToOne",
       "target": "api::story.story"
     },
-    "download": {
+    "downloads": {
       "type": "media",
       "multiple": true,
       "required": false,

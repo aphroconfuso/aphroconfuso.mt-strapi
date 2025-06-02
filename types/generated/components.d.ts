@@ -170,7 +170,7 @@ export interface SummariesSummaries extends Schema.Component {
     displayName: 'summaries';
   };
   attributes: {
-    download: Attribute.Media<'files', true>;
+    downloads: Attribute.Media<'files', true>;
     story: Attribute.Relation<
       'summaries.summaries',
       'oneToOne',
