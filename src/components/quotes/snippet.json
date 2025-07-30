@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_quotes_snippets",
+  "info": {
+    "displayName": "Snippets",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "full": {
+      "type": "text",
+      "required": false
+    },
+    "beginning": {
+      "type": "string",
+      "required": true
+    },
+    "end": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

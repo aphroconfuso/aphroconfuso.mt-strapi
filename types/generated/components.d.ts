@@ -163,6 +163,19 @@ export interface QuotesEpigraphs extends Schema.Component {
   };
 }
 
+export interface QuotesSnippet extends Schema.Component {
+  collectionName: 'components_quotes_snippets';
+  info: {
+    description: '';
+    displayName: 'Snippets';
+  };
+  attributes: {
+    beginning: Attribute.String & Attribute.Required;
+    end: Attribute.String;
+    full: Attribute.Text;
+  };
+}
+
 export interface SummariesSummaries extends Schema.Component {
   collectionName: 'components_summaries_summaries';
   info: {
@@ -192,6 +205,7 @@ declare module '@strapi/types' {
       'promotions.story-poem-promo': PromotionsStoryPoemPromo;
       'promotions.story-promo': PromotionsStoryPromo;
       'quotes.epigraphs': QuotesEpigraphs;
+      'quotes.snippet': QuotesSnippet;
       'summaries.summaries': SummariesSummaries;
     }
   }

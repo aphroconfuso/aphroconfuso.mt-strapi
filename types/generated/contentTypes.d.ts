@@ -1728,6 +1728,14 @@ export interface ApiStoryStory extends Schema.CollectionType {
         };
       }>;
     showImagePromo: Attribute.Boolean & Attribute.DefaultTo<true>;
+    snippets: Attribute.Component<'quotes.snippet', true> &
+      Attribute.SetMinMax<
+        {
+          max: 99;
+          min: 0;
+        },
+        number
+      >;
     title: Attribute.String & Attribute.Required;
     translators: Attribute.Relation<
       'api::story.story',
