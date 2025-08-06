@@ -21,16 +21,8 @@
       "required": true
     },
     "body": {
-      "type": "richtext",
+      "type": "text",
       "required": true
-    },
-    "body2": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
