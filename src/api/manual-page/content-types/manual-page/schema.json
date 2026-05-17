@@ -1,0 +1,29 @@
+{
+	"kind": "collectionType",
+	"collectionName": "manual_pages",
+	"info": {
+		"singularName": "manual-page",
+		"pluralName": "manual-pages",
+		"displayName": "ManualPage",
+		"description": ""
+	},
+	"options": {
+		"draftAndPublish": true
+	},
+	"pluginOptions": {},
+	"attributes": {
+		"key": {
+			"type": "string",
+			"required": false,
+			"unique": false
+		},
+		"body": {
+			"type": "text",
+			"required": true
+		},
+		"title": {
+			"type": "string",
+			"required": true
+		}
+	}
+}

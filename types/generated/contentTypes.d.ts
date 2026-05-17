@@ -1106,7 +1106,14 @@ export interface ApiLettersPageLettersPage extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    body: Attribute.Text & Attribute.Required;
+    body: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'light';
+        }
+      >;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::letters-page.letters-page',
@@ -1119,6 +1126,39 @@ export interface ApiLettersPageLettersPage extends Schema.SingleType {
     updatedAt: Attribute.DateTime;
     updatedBy: Attribute.Relation<
       'api::letters-page.letters-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiManualPageManualPage extends Schema.CollectionType {
+  collectionName: 'manual_pages';
+  info: {
+    description: '';
+    displayName: 'ManualPage';
+    pluralName: 'manual-pages';
+    singularName: 'manual-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    body: Attribute.Text & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::manual-page.manual-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    key: Attribute.String;
+    publishedAt: Attribute.DateTime;
+    title: Attribute.String & Attribute.Required;
+    updatedAt: Attribute.DateTime;
+    updatedBy: Attribute.Relation<
+      'api::manual-page.manual-page',
       'oneToOne',
       'admin::user'
     > &
@@ -1143,15 +1183,7 @@ export interface ApiNewsletterPageNewsletterPage extends Schema.SingleType {
     };
   };
   attributes: {
-    body: Attribute.RichText & Attribute.Required;
-    body2: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'light';
-        }
-      >;
+    body: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::newsletter-page.newsletter-page',
@@ -2356,6 +2388,7 @@ declare module '@strapi/types' {
       'api::international-media.international-media': ApiInternationalMediaInternationalMedia;
       'api::letter.letter': ApiLetterLetter;
       'api::letters-page.letters-page': ApiLettersPageLettersPage;
+      'api::manual-page.manual-page': ApiManualPageManualPage;
       'api::newsletter-page.newsletter-page': ApiNewsletterPageNewsletterPage;
       'api::organisation.organisation': ApiOrganisationOrganisation;
       'api::person.person': ApiPersonPerson;
