@@ -25,9 +25,9 @@ jobs:
           eval "$(ssh-agent -s)"
           ssh-add ~/.ssh/id_rsa_deploykey_unsigned
           git pull
-    - name: Notify slack
-      env:
-        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-      uses: pullreminders/slack-action@master
-      with:
-        args: '{\"channel\":\"C08TQEMC3\",\"text\":\"aphroconfuso.mt-strapi action status: ${{ job.status }}\"}'
+    # - name: Notify slack
+    #   env:
+    #     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+    #   uses: pullreminders/slack-action@master
+    #   with:
+    #     args: '{\"channel\":\"C08TQEMC3\",\"text\":\"aphroconfuso.mt-strapi action status: ${{ job.status }}\"}'
