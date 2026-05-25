@@ -1203,6 +1203,50 @@ export interface ApiNewsletterPageNewsletterPage extends Schema.SingleType {
   };
 }
 
+export interface ApiNewsletterNewsletter extends Schema.CollectionType {
+  collectionName: 'newsletters';
+  info: {
+    description: '';
+    displayName: 'Newsletter';
+    pluralName: 'newsletters';
+    singularName: 'newsletter';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::newsletter.newsletter',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    key: Attribute.String &
+      Attribute.Unique &
+      Attribute.SetMinMaxLength<{
+        maxLength: 20;
+      }>;
+    promos: Attribute.Component<'promotions.story-promo', true> &
+      Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
+    publishedAt: Attribute.DateTime;
+    subject: Attribute.String & Attribute.Required & Attribute.Unique;
+    updatedAt: Attribute.DateTime;
+    updatedBy: Attribute.Relation<
+      'api::newsletter.newsletter',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiOrganisationOrganisation extends Schema.CollectionType {
   collectionName: 'organisations';
   info: {
@@ -1615,7 +1659,7 @@ export interface ApiStoryStory extends Schema.CollectionType {
     dateTimePublication: Attribute.DateTime & Attribute.Required;
     description: Attribute.Text &
       Attribute.SetMinMaxLength<{
-        minLength: 350;
+        minLength: 200;
       }>;
     diaryDate: Attribute.Date &
       Attribute.SetPluginOptions<{
@@ -2390,6 +2434,7 @@ declare module '@strapi/types' {
       'api::letters-page.letters-page': ApiLettersPageLettersPage;
       'api::manual-page.manual-page': ApiManualPageManualPage;
       'api::newsletter-page.newsletter-page': ApiNewsletterPageNewsletterPage;
+      'api::newsletter.newsletter': ApiNewsletterNewsletter;
       'api::organisation.organisation': ApiOrganisationOrganisation;
       'api::person.person': ApiPersonPerson;
       'api::podcast-page.podcast-page': ApiPodcastPagePodcastPage;

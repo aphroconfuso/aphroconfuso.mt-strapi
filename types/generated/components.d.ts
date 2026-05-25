@@ -147,6 +147,7 @@ export interface PromotionsStoryPromo extends Schema.Component {
       'api::story.story'
     >;
     text: Attribute.Text;
+    title: Attribute.String;
   };
 }
 
