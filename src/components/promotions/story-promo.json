@@ -30,6 +30,9 @@
     },
     "blurbLines": {
       "type": "integer"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

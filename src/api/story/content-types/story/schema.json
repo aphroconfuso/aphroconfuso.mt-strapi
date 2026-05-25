@@ -31,7 +31,7 @@
     "description": {
       "type": "text",
       "required": false,
-      "minLength": 350
+      "minLength": 200
     },
     "pageUrl": {
       "type": "string",

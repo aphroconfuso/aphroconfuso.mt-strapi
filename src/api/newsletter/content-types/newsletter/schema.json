@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "newsletters",
+  "info": {
+    "singularName": "newsletter",
+    "pluralName": "newsletters",
+    "displayName": "Newsletter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "promos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "promotions.story-promo",
+      "min": 1
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "subject": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "key": {
+      "type": "string",
+      "maxLength": 20,
+      "unique": true
+    }
+  }
+}
