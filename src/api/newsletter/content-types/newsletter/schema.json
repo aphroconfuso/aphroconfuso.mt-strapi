@@ -30,8 +30,10 @@
     },
     "key": {
       "type": "string",
-      "maxLength": 20,
-      "unique": true
+      "maxLength": 30,
+      "unique": true,
+      "required": true,
+      "minLength": 3
     },
     "promos": {
       "displayName": "StoryPromoNewsletter",

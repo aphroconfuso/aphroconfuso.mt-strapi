@@ -1,7 +1,8 @@
 {
   "collectionName": "components_promotions_story_promo_newsletters",
   "info": {
-    "displayName": "StoryPromoNewsletter"
+    "displayName": "StoryPromoNewsletter",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -18,6 +19,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::story.story"
+    },
+    "interfaceLabel": {
+      "type": "string",
+      "required": true
     }
   }
 }

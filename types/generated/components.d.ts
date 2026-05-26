@@ -163,9 +163,11 @@ export interface PromotionsStoryPromo extends Schema.Component {
 export interface PromotionsStoryPromoNewsletter extends Schema.Component {
   collectionName: 'components_promotions_story_promo_newsletters';
   info: {
+    description: '';
     displayName: 'StoryPromoNewsletter';
   };
   attributes: {
+    interfaceLabel: Attribute.String & Attribute.Required;
     linkText: Attribute.Text;
     story: Attribute.Relation<
       'promotions.story-promo-newsletter',

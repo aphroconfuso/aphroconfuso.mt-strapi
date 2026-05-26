@@ -1226,9 +1226,11 @@ export interface ApiNewsletterNewsletter extends Schema.CollectionType {
     image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     imageLink: Attribute.String;
     key: Attribute.String &
+      Attribute.Required &
       Attribute.Unique &
       Attribute.SetMinMaxLength<{
-        maxLength: 20;
+        maxLength: 30;
+        minLength: 3;
       }>;
     promos: Attribute.Component<'promotions.story-promo-newsletter', true>;
     publishedAt: Attribute.DateTime;
