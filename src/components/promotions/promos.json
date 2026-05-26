@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_promotions_promos",
+  "info": {
+    "displayName": "promos"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

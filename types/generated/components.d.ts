@@ -68,6 +68,16 @@ export interface PromotionsAudio extends Schema.Component {
   };
 }
 
+export interface PromotionsPromos extends Schema.Component {
+  collectionName: 'components_promotions_promos';
+  info: {
+    displayName: 'promos';
+  };
+  attributes: {
+    title: Attribute.String;
+  };
+}
+
 export interface PromotionsStoryImagePromo extends Schema.Component {
   collectionName: 'components_promotions_story_image_promos';
   info: {
@@ -147,6 +157,22 @@ export interface PromotionsStoryPromo extends Schema.Component {
       'api::story.story'
     >;
     text: Attribute.Text;
+  };
+}
+
+export interface PromotionsStoryPromoNewsletter extends Schema.Component {
+  collectionName: 'components_promotions_story_promo_newsletters';
+  info: {
+    displayName: 'StoryPromoNewsletter';
+  };
+  attributes: {
+    linkText: Attribute.Text;
+    story: Attribute.Relation<
+      'promotions.story-promo-newsletter',
+      'oneToOne',
+      'api::story.story'
+    >;
+    subtitle: Attribute.String;
     title: Attribute.String;
   };
 }
@@ -202,9 +228,11 @@ declare module '@strapi/types' {
       'book-promo.book-promotion': BookPromoBookPromotion;
       'definitions.style-guide-item': DefinitionsStyleGuideItem;
       'promotions.audio': PromotionsAudio;
+      'promotions.promos': PromotionsPromos;
       'promotions.story-image-promo': PromotionsStoryImagePromo;
       'promotions.story-poem-promo': PromotionsStoryPoemPromo;
       'promotions.story-promo': PromotionsStoryPromo;
+      'promotions.story-promo-newsletter': PromotionsStoryPromoNewsletter;
       'quotes.epigraphs': QuotesEpigraphs;
       'quotes.snippet': QuotesSnippet;
       'summaries.summaries': SummariesSummaries;

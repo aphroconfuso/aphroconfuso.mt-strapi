@@ -1222,19 +1222,15 @@ export interface ApiNewsletterNewsletter extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
+    date: Attribute.DateTime;
     image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    imageLink: Attribute.String;
     key: Attribute.String &
       Attribute.Unique &
       Attribute.SetMinMaxLength<{
         maxLength: 20;
       }>;
-    promos: Attribute.Component<'promotions.story-promo', true> &
-      Attribute.SetMinMax<
-        {
-          min: 1;
-        },
-        number
-      >;
+    promos: Attribute.Component<'promotions.story-promo-newsletter', true>;
     publishedAt: Attribute.DateTime;
     subject: Attribute.String & Attribute.Required & Attribute.Unique;
     updatedAt: Attribute.DateTime;

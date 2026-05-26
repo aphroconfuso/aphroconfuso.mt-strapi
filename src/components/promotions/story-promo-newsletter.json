@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_promotions_story_promo_newsletters",
+  "info": {
+    "displayName": "StoryPromoNewsletter"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "linkText": {
+      "type": "text"
+    },
+    "story": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::story.story"
+    }
+  }
+}

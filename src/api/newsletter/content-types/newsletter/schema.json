@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "promos": {
-      "type": "component",
-      "repeatable": true,
-      "component": "promotions.story-promo",
-      "min": 1
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -38,6 +32,18 @@
       "type": "string",
       "maxLength": 20,
       "unique": true
+    },
+    "promos": {
+      "displayName": "StoryPromoNewsletter",
+      "type": "component",
+      "repeatable": true,
+      "component": "promotions.story-promo-newsletter"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "imageLink": {
+      "type": "string"
     }
   }
 }
