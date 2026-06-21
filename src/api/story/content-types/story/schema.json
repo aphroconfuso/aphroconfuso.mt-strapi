@@ -197,7 +197,7 @@
     },
     "publicationHistory": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "promoImageMobile": {
       "type": "media",

@@ -881,7 +881,7 @@ export interface ApiGenericGeneric extends Schema.CollectionType {
       Attribute.Private;
     key: Attribute.String;
     publishedAt: Attribute.DateTime;
-    title: Attribute.String & Attribute.Required;
+    title: Attribute.String & Attribute.Required & Attribute.Unique;
     updatedAt: Attribute.DateTime;
     updatedBy: Attribute.Relation<
       'api::generic.generic',
@@ -1133,6 +1133,36 @@ export interface ApiLettersPageLettersPage extends Schema.SingleType {
   };
 }
 
+export interface ApiManualIndexManualIndex extends Schema.SingleType {
+  collectionName: 'manual_indices';
+  info: {
+    displayName: 'ManualIndex';
+    pluralName: 'manual-indices';
+    singularName: 'manual-index';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::manual-index.manual-index',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    publishedAt: Attribute.DateTime;
+    section: Attribute.Component<'section.section', true>;
+    updatedAt: Attribute.DateTime;
+    updatedBy: Attribute.Relation<
+      'api::manual-index.manual-index',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiManualPageManualPage extends Schema.CollectionType {
   collectionName: 'manual_pages';
   info: {
@@ -1234,7 +1264,7 @@ export interface ApiNewsletterNewsletter extends Schema.CollectionType {
       }>;
     promos: Attribute.Component<'promotions.story-promo-newsletter', true>;
     publishedAt: Attribute.DateTime;
-    subject: Attribute.String & Attribute.Required & Attribute.Unique;
+    subject: Attribute.String;
     updatedAt: Attribute.DateTime;
     updatedBy: Attribute.Relation<
       'api::newsletter.newsletter',
@@ -1783,7 +1813,7 @@ export interface ApiStoryStory extends Schema.CollectionType {
     prominentMentions: Attribute.Integer & Attribute.DefaultTo<0>;
     promoImage: Attribute.Media<'images'> & Attribute.Required;
     promoImageMobile: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    publicationHistory: Attribute.Text & Attribute.Required;
+    publicationHistory: Attribute.Text;
     publishedAt: Attribute.DateTime;
     readers: Attribute.Relation<
       'api::story.story',
@@ -2430,6 +2460,7 @@ declare module '@strapi/types' {
       'api::international-media.international-media': ApiInternationalMediaInternationalMedia;
       'api::letter.letter': ApiLetterLetter;
       'api::letters-page.letters-page': ApiLettersPageLettersPage;
+      'api::manual-index.manual-index': ApiManualIndexManualIndex;
       'api::manual-page.manual-page': ApiManualPageManualPage;
       'api::newsletter-page.newsletter-page': ApiNewsletterPageNewsletterPage;
       'api::newsletter.newsletter': ApiNewsletterNewsletter;

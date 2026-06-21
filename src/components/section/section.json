@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_section_sections",
+  "info": {
+    "displayName": "Section"
+  },
+  "options": {},
+  "attributes": {
+    "manualpages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::manual-page.manual-page"
+    },
+    "sectionindex": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::manual-page.manual-page"
+    }
+  }
+}

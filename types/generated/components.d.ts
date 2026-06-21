@@ -205,6 +205,25 @@ export interface QuotesSnippet extends Schema.Component {
   };
 }
 
+export interface SectionSection extends Schema.Component {
+  collectionName: 'components_section_sections';
+  info: {
+    displayName: 'Section';
+  };
+  attributes: {
+    manualpages: Attribute.Relation<
+      'section.section',
+      'oneToMany',
+      'api::manual-page.manual-page'
+    >;
+    sectionindex: Attribute.Relation<
+      'section.section',
+      'oneToOne',
+      'api::manual-page.manual-page'
+    >;
+  };
+}
+
 export interface SummariesSummaries extends Schema.Component {
   collectionName: 'components_summaries_summaries';
   info: {
@@ -237,6 +256,7 @@ declare module '@strapi/types' {
       'promotions.story-promo-newsletter': PromotionsStoryPromoNewsletter;
       'quotes.epigraphs': QuotesEpigraphs;
       'quotes.snippet': QuotesSnippet;
+      'section.section': SectionSection;
       'summaries.summaries': SummariesSummaries;
     }
   }
