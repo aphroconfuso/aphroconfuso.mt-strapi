@@ -1314,6 +1314,11 @@ export interface ApiOrganisationOrganisation extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
+    venue: Attribute.Relation<
+      'api::organisation.organisation',
+      'oneToOne',
+      'api::venue.venue'
+    >;
   };
 }
 
@@ -1631,6 +1636,43 @@ export interface ApiSequenceSequence extends Schema.CollectionType {
   };
 }
 
+export interface ApiSponsorhipSponsorhip extends Schema.CollectionType {
+  collectionName: 'sponsorhips';
+  info: {
+    displayName: 'Sponsorhip';
+    pluralName: 'sponsorhips';
+    singularName: 'sponsorhip';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    body: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::sponsorhip.sponsorhip',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    logo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    publishedAt: Attribute.DateTime;
+    stories: Attribute.Relation<
+      'api::sponsorhip.sponsorhip',
+      'manyToMany',
+      'api::story.story'
+    >;
+    title: Attribute.String & Attribute.Required;
+    updatedAt: Attribute.DateTime;
+    updatedBy: Attribute.Relation<
+      'api::sponsorhip.sponsorhip',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiStoryStory extends Schema.CollectionType {
   collectionName: 'stories';
   info: {
@@ -1840,6 +1882,11 @@ export interface ApiStoryStory extends Schema.CollectionType {
         },
         number
       >;
+    sponsorhips: Attribute.Relation<
+      'api::story.story',
+      'manyToMany',
+      'api::sponsorhip.sponsorhip'
+    >;
     title: Attribute.String & Attribute.Required;
     translators: Attribute.Relation<
       'api::story.story',
@@ -1970,7 +2017,7 @@ export interface ApiVenueVenue extends Schema.CollectionType {
   collectionName: 'venues';
   info: {
     description: '';
-    displayName: 'Venue';
+    displayName: 'Location';
     pluralName: 'venues';
     singularName: 'venue';
   };
@@ -1983,7 +2030,11 @@ export interface ApiVenueVenue extends Schema.CollectionType {
     };
   };
   attributes: {
+    address: Attribute.String;
     city: Attribute.String & Attribute.Required;
+    country: Attribute.Enumeration<['G\u0127awdex', 'Malta']> &
+      Attribute.Required &
+      Attribute.DefaultTo<'Malta'>;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::venue.venue',
@@ -1996,7 +2047,13 @@ export interface ApiVenueVenue extends Schema.CollectionType {
       'manyToMany',
       'api::event.event'
     >;
+    geoUrl: Attribute.String;
     name: Attribute.String & Attribute.Required;
+    organisation: Attribute.Relation<
+      'api::venue.venue',
+      'oneToOne',
+      'api::organisation.organisation'
+    >;
     publishedAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     updatedBy: Attribute.Relation<
@@ -2471,6 +2528,7 @@ declare module '@strapi/types' {
       'api::process.process': ApiProcessProcess;
       'api::publisher.publisher': ApiPublisherPublisher;
       'api::sequence.sequence': ApiSequenceSequence;
+      'api::sponsorhip.sponsorhip': ApiSponsorhipSponsorhip;
       'api::story.story': ApiStoryStory;
       'api::style-guide-entry.style-guide-entry': ApiStyleGuideEntryStyleGuideEntry;
       'api::style-guide.style-guide': ApiStyleGuideStyleGuide;

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "venue",
     "pluralName": "venues",
-    "displayName": "Venue",
+    "displayName": "Location",
     "description": ""
   },
   "options": {
@@ -29,6 +29,27 @@
       "relation": "manyToMany",
       "target": "api::event.event",
       "mappedBy": "venues"
+    },
+    "organisation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::organisation.organisation",
+      "inversedBy": "venue"
+    },
+    "country": {
+      "type": "enumeration",
+      "enum": [
+        "Għawdex",
+        "Malta"
+      ],
+      "default": "Malta",
+      "required": true
+    },
+    "address": {
+      "type": "string"
+    },
+    "geoUrl": {
+      "type": "string"
     }
   }
 }

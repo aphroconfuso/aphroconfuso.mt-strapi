@@ -354,6 +354,12 @@
       "type": "component",
       "repeatable": true,
       "component": "book-promo.book-promotion"
+    },
+    "sponsorhips": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sponsorhip.sponsorhip",
+      "inversedBy": "stories"
     }
   }
 }

@@ -10,7 +10,28 @@ export interface BookInfoBook extends Schema.Component {
     inShops: Attribute.Boolean & Attribute.DefaultTo<false>;
     isbn: Attribute.String;
     lokalUrl: Attribute.String;
+    nationalBookPrizeCategory: Attribute.Enumeration<
+      [
+        'Letteratura Mhux Fittizja',
+        'Novelli',
+        'Poe\u017Cija',
+        'Pro\u017Ca Fittizja Tradotta',
+        'Rumanzi'
+      ]
+    >;
+    nationalBookPrizePosition: Attribute.Enumeration<
+      ['Finalist', 'Rebbie\u0127']
+    >;
+    nationalBookPrizeYear: Attribute.Integer &
+      Attribute.SetMinMax<
+        {
+          max: 2099;
+          min: 2023;
+        },
+        number
+      >;
     orderable: Attribute.Boolean & Attribute.DefaultTo<false>;
+    ownShopUrl: Attribute.String;
     pages: Attribute.Integer;
     price: Attribute.Integer;
     published: Attribute.Boolean & Attribute.DefaultTo<false>;

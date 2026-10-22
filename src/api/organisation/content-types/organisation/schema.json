@@ -28,6 +28,12 @@
       "relation": "manyToMany",
       "target": "api::event.event",
       "mappedBy": "organisations"
+    },
+    "venue": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::venue.venue",
+      "mappedBy": "organisation"
     }
   }
 }

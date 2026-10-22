@@ -29,6 +29,31 @@
     },
     "lokalUrl": {
       "type": "string"
+    },
+    "ownShopUrl": {
+      "type": "string"
+    },
+    "nationalBookPrizePosition": {
+      "type": "enumeration",
+      "enum": [
+        "Finalist",
+        "Rebbieħ"
+      ]
+    },
+    "nationalBookPrizeCategory": {
+      "type": "enumeration",
+      "enum": [
+        "Letteratura Mhux Fittizja",
+        "Novelli",
+        "Poeżija",
+        "Proża Fittizja Tradotta",
+        "Rumanzi"
+      ]
+    },
+    "nationalBookPrizeYear": {
+      "type": "integer",
+      "max": 2099,
+      "min": 2023
     }
   }
 }
