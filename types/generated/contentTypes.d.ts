@@ -1639,7 +1639,8 @@ export interface ApiSequenceSequence extends Schema.CollectionType {
 export interface ApiSponsorhipSponsorhip extends Schema.CollectionType {
   collectionName: 'sponsorhips';
   info: {
-    displayName: 'Sponsorhip';
+    description: '';
+    displayName: 'Sponsorship';
     pluralName: 'sponsorhips';
     singularName: 'sponsorhip';
   };

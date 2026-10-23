@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sponsorhip",
     "pluralName": "sponsorhips",
-    "displayName": "Sponsorhip"
+    "displayName": "Sponsorship",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,14 +20,15 @@
       "type": "text"
     },
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "stories": {
       "type": "relation",
